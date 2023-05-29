@@ -342,7 +342,7 @@ body {
 .l-flex--area .l-flex--contents.-header-contactArea .flexItem a {
   display: block;
   width: 100%;
-  padding: 3vh 0;
+  padding: 1vh 0 3vh;
 }
 .l-flex--area .l-flex--contents.-tel {
   display: flex;
@@ -1356,7 +1356,15 @@ body {
   font-family: "メイリオ", "Meiryo", sans-serif;
 }
 .l-text.-REQUEST {
+  position: relative;
   background: white;
+}
+.l-text.-REQUEST::after {
+  content: "REQUEST";
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .l-text.-RESERVE {
   background: #D0B580;

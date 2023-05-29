@@ -61,7 +61,15 @@
     }
 
     &.-REQUEST{
+        position: relative;
         background: white;
+        &::after{
+            content: "REQUEST";
+            position: absolute;
+            top:70%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
     }
     &.-RESERVE{
         background: $site-color01;
