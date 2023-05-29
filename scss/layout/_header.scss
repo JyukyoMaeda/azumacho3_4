@@ -1,4 +1,30 @@
 
-.l-header--area{
-    
+.l-header{
+    background: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.39);
+    .l-header-contents{
+
+    }
+}
+
+
+.y-border{
+    // display: block;
+    width: auto;
+    position: relative;
+    z-index: 2;
+    &::after{
+        content: "";
+
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 100%;
+        height: 1vh;
+        background: $yellow-b;
+
+        z-index: -1;
+    }
 }
