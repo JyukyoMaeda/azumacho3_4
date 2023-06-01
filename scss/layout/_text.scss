@@ -1,6 +1,12 @@
 
 .l-text{
     line-height: 1.7;
+    &.-lh-1{
+        line-height: 1;
+        @include mq(sp){
+            line-height: 1.5;
+        }
+    }
     &.-lh-2{
         line-height: 2;
         @include mq(sp){
@@ -274,22 +280,21 @@
 
     }
     &.-size3L{//35px
-        font-size: 20px;
+        font-size: 24px;
         @include mq(tb){
-            font-size: clamp(28px, 3.5vw, 32px);
+            font-size: 2.5rem;
         }
-        &.-p35{
-            font-size: 24px;
-            @include mq(tb){
-                font-size: clamp(28px, 4vw, 50px);
-            }
+        @include mq(tb-pc1400){
+            font-size: 4rem;
         }
-
     }
     &.-size4L{//48px
-        font-size: 16px;
+        font-size: 28px;
         @include mq(tb){
-            font-size: clamp(10px, 2.5vw, 48px);
+            font-size: 5.5rem;
+        }
+        @include mq(tb-pc1400){
+            font-size: 7rem;
         }
     }
 }

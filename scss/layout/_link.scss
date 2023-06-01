@@ -281,21 +281,17 @@
 }
 
 .l-linkText{
-    font-size: 10px;
+    display: inline-block;
     color: $main-color--b;
-    margin-right: -3%;
     transition: all .5s;
     @include mq(tb){
-        font-size: 12px;
-        margin-right: 2%;
     }
     &:hover{
         color: $main-color--gray;
     }
-    &.-p02{
-        margin-right: -2%;
-        @include mq(tb){
-            margin-right: 2%;
-        }
+    &.-borderBox{
+        width: auto;
+        border: 1px solid black;
+        padding: 1vh 1.5vw;
     }
 }

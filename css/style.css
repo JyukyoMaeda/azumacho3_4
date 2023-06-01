@@ -323,16 +323,6 @@ body {
   width: 100%;
   position: absolute;
 }
-.l-contents.-img-bg .l-contentsBox.-w--center {
-  left: 50%;
-  transform: translateX(-50%);
-}
-.l-contents.-img-bg .l-contentsBox.-w--right {
-  right: 10%;
-}
-.l-contents.-img-bg .l-contentsBox.-w--left {
-  left: 10%;
-}
 .l-contents.-img-bg .l-contentsBox .l-contentsBox--wrapper {
   width: 100%;
   height: auto;
@@ -348,6 +338,26 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.l-contents.-img-bg .l-contentsBox.-top-op {
+  top: 81%;
+  left: 22%;
+  transform: translate(-50%, -50%);
+  width: 38%;
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-top-op {
+    top: 88%;
+    left: 18%;
+    width: 33%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .l-contents.-img-bg .l-contentsBox.-top-op {
+    top: 81%;
+    left: 5%;
+    width: 38%;
+  }
 }
 .l-contents.-img-bg.-pc80 {
   width: 80%;
@@ -829,21 +839,32 @@ body {
   }
 }
 
-.y-border {
+.-border {
   width: auto;
   position: relative;
   z-index: 2;
 }
-.y-border::after {
+.-border::after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
-  height: 1vh;
-  background: rgba(255, 212, 0, 0.6);
+  width: 92%;
+  max-width: 1200px;
+  height: 0.1vh;
+  background: black;
   z-index: -1;
+}
+@media screen and (min-width: 767px) {
+  .-border::after {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .-border::after {
+    width: 80%;
+  }
 }
 
 .gaiyo_wrap {
@@ -1410,27 +1431,17 @@ body {
 }
 
 .l-linkText {
-  font-size: 10px;
+  display: inline-block;
   color: #333333;
-  margin-right: -3%;
   transition: all 0.5s;
-}
-@media screen and (min-width: 767px) {
-  .l-linkText {
-    font-size: 12px;
-    margin-right: 2%;
-  }
 }
 .l-linkText:hover {
   color: rgba(143, 143, 143, 0.9019607843);
 }
-.l-linkText.-p02 {
-  margin-right: -2%;
-}
-@media screen and (min-width: 767px) {
-  .l-linkText.-p02 {
-    margin-right: 2%;
-  }
+.l-linkText.-borderBox {
+  width: auto;
+  border: 1px solid black;
+  padding: 1vh 1.5vw;
 }
 
 .l-slider .access-slider {
@@ -1509,6 +1520,14 @@ body {
 
 .l-text {
   line-height: 1.7;
+}
+.l-text.-lh-1 {
+  line-height: 1;
+}
+@media screen and (max-width: 768px) {
+  .l-text.-lh-1 {
+    line-height: 1.5;
+  }
 }
 .l-text.-lh-2 {
   line-height: 2;
@@ -1775,27 +1794,29 @@ body {
   }
 }
 .l-text.-size3L {
-  font-size: 20px;
-}
-@media screen and (min-width: 767px) {
-  .l-text.-size3L {
-    font-size: clamp(28px, 3.5vw, 32px);
-  }
-}
-.l-text.-size3L.-p35 {
   font-size: 24px;
 }
 @media screen and (min-width: 767px) {
-  .l-text.-size3L.-p35 {
-    font-size: clamp(28px, 4vw, 50px);
+  .l-text.-size3L {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .l-text.-size3L {
+    font-size: 4rem;
   }
 }
 .l-text.-size4L {
-  font-size: 16px;
+  font-size: 28px;
 }
 @media screen and (min-width: 767px) {
   .l-text.-size4L {
-    font-size: clamp(10px, 2.5vw, 48px);
+    font-size: 5.5rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .l-text.-size4L {
+    font-size: 7rem;
   }
 }
 
