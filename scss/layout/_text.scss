@@ -3,6 +3,9 @@
     line-height: 1.7;
     &.-lh-2{
         line-height: 2;
+        @include mq(sp){
+            line-height: 1.5;
+        }
     }
     // 位置
     &.-left{text-align: start;}
@@ -91,6 +94,12 @@
             transform: translate(-50%,-50%);
         }
     }
+    &.-sp-TOP{
+        position: relative;
+        &::after{
+            background: url(../images/SVG/sp_icon01.svg) no-repeat;
+        }
+    }
     &.-CONCEPT{
         position: relative;
         &::after{
@@ -100,6 +109,12 @@
             top:30%;
             left: 50%;
             transform: translate(-50%,-50%);
+        }
+    }
+    &.-sp-CONCEPT{
+        position: relative;
+        &::after{
+            background: url(../images/SVG/sp_icon02.svg) no-repeat;
         }
     }
     &.-BUILT{
@@ -113,6 +128,12 @@
             transform: translate(-50%,-50%);
         }
     }
+    &.-sp-BUILT{
+        position: relative;
+        &::after{
+            background: url(../images/SVG/sp_icon03.svg) no-repeat;
+        }
+    }
     &.-SETSUBI{
         position: relative;
         &::after{
@@ -122,6 +143,12 @@
             top:30%;
             left: 50%;
             transform: translate(-50%,-50%);
+        }
+    }
+    &.-sp-SETSUBI{
+        position: relative;
+        &::after{
+            background: url(../images/SVG/sp_icon04.svg) no-repeat;
         }
     }
     &.-LOCATION{
@@ -135,15 +162,27 @@
             transform: translate(-50%,-50%);
         }
     }
+    &.-sp-LOCATION{
+        position: relative;
+        &::after{
+            background: url(../images/SVG/sp_icon05.svg) no-repeat;
+        }
+    }
     &.-JYUKYO{
         position: relative;
         &::after{
             content: "JYUKYO QUALITY";
-            font-size: .5vw;
+            font-size: .6vw;
             position: absolute;
             top:30%;
             left: 50%;
             transform: translate(-50%,-50%);
+        }
+    }
+    &.-sp-JYUKYO{
+        position: relative;
+        &::after{
+            background: url(../images/SVG/sp_icon06.svg) no-repeat;
         }
     }
 
@@ -192,16 +231,11 @@
     &.-sizeM{
         font-size: 12px;
         @include mq(tb){
-            font-size: clamp(10px, 1.2vw, 16px);
+            font-size: clamp(12px, 1.3vw, 18px);
         }
-        &.-concept02{
+        &.-v02{
             @include mq(tb){
-                font-size: clamp(10px, 1.3vw, 18px);
-            }
-        }
-        &.-s13{
-            @include mq(sp){
-                font-size: 13px;
+                font-size: clamp(12px, 1.5vw, 18px);
             }
         }
     }
@@ -210,17 +244,7 @@
         @include mq(tb){
             font-size: clamp(10px, 1.8vw, 24px);
         }
-        @include mq(tb-pc1000){
-            font-size: clamp(10px, 1.35vw, 24px);
-        }
-        &.-s16{
-            // @include mq(tb-sp){
-            //     font-size: 10px;
-            // }
-            // @include mq(sp){
-            //     font-size: 16px;
-            // }
-        }
+
     }
     &.-sizeLL{//30px
         font-size: 28px;

@@ -7,16 +7,38 @@
 	.sp{
 		display: block !important;
 	}
-	.pc{
+	.pc,
+	.pc1000-max,
+	.pc1600{
 		display: none !important;
 	}
 }
 //下記スマホ以上
 @include mq(tb){
+	.sp,
+	.pc1600{
+		display: none !important;
+	}
+	.pc1000-max,
+	.pc{
+		display: block !important;
+	}
+}
+
+// ブラウザ1000以上
+@include mq(tb-pc1000){
 	.sp{
 		display: none !important;
 	}
-	.pc{
+	.pc1000-max{
+		display: black !important;
+	}
+}
+
+// ブラウザ1400以上
+@include mq(tb-pc1600){
+
+	.pc1600{
 		display: block !important;
 	}
 }
