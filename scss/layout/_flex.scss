@@ -14,7 +14,7 @@
 			}
 			.flexItem{
 				&.-logoArea{
-					width: calc(30%);
+					width: calc(35%);
 					padding-right: 1vw;
 					@include mq(tb){
 						width: calc(10%);
@@ -22,7 +22,7 @@
 					}
 				}
 				&.-center-contentsArea{
-					width: calc(70%);
+					width: calc(62%);
 					padding-left: 1vw;
 					margin: auto;
 					span{
@@ -82,7 +82,29 @@
 				a{
 					display: block;
 					width: 100%;
-					padding: 1vh 0 4vh;
+					height: 100%;
+					transition: .5s all;
+					span{
+						padding: 1vh 0 4vh;
+					}
+					&:hover{
+						transform: scale(1.1);
+					}
+				}
+			}
+		}
+		&.-columnBox{
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: space-around;
+			align-items: center;
+			.flexItem{
+				padding: 2%;
+				&.title{
+					width: 30%;
+				}
+				&.des{
+					width: 70%;
 				}
 			}
 		}

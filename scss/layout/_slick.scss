@@ -21,8 +21,8 @@
     position: absolute;
     top: 50%;
     margin-top: -15px;
-  }
-  .prev-arrow{
+}
+.prev-arrow{
     left: -40px;
     width: 0;
     height: 0;
@@ -31,8 +31,12 @@
     border-right: 15px solid #333;
     border-top: 10px solid white;
     border-bottom: 10px solid white;
-  }
-  .next-arrow{
+    transition: .5s all;
+    &:hover{
+        border-right: 15px solid $site-color01;
+    }
+}
+.next-arrow{
     right: -40px;
     width: 0;
     height: 0;
@@ -41,4 +45,35 @@
     border-left: 15px solid #333;
     border-top: 10px solid white;
     border-bottom: 10px solid white;
-  }
+    transition: .5s all;
+    &:hover{
+        border-left: 15px solid $site-color01;
+    }
+}
+
+.slick-dots{
+    li{
+        button{
+            &:before {
+                transition: .3s all;
+                @include mq(tb){
+                    font-size: 17px !important;
+                    width: 44px !important;
+                    height: 44px !important;
+                }
+            }
+            &:hover{
+                &:before {
+                    color: $site-color01 !important;
+                }
+            }
+        }
+    }
+}
+.slick-active{
+    button{
+        &:before {
+            color: $site-color01 !important;
+        }
+    }
+}

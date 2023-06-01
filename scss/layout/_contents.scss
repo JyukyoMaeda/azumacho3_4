@@ -1,17 +1,20 @@
 .l-contents{
 	width: 100%;
 	height: auto;
+	&.-w1200{
+		width: 100%;
+		max-width: 1200px;
+		margin: auto;
+		@include mq(sp){
+			width: 95%;
+		}
+	}
 	&.-img{// 背景画像のみ
 		width: 100%;
 		height: auto;
 	}
 	&.-img-bg{// 背景画像＋コンテンツ
 		position: relative;
-		&.-w1200{
-			width: 100%;
-			max-width: 1200px;
-			margin: auto;
-		}
 		.imgBox{// 背景画像
 			width: 100%;
 			height: auto;
@@ -55,19 +58,30 @@
 
 				}
 			}
+			&.-kukaku{
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+		&.-pc80{
+			width: 80%;
+			margin: auto;
+			@include mq(tb){
+				width: 55%;
+
+			}
 		}
 	}
 	// 基本的にSliderは、「Slick or Swiper」を使用すること
 	// 場所：「Scss/introduction内」
 	&.-slider{
-		&.-w1200{
-			width: 100%;
-			max-width: 1200px;
-			margin: auto;
-		}
 		//下記スマホ以上
 		@include mq(tb){
 		}
+	}
+	&.-textArea{
+
 	}
 }
 

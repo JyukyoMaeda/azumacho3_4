@@ -39,7 +39,7 @@
     &.-b{font-weight: bold;}
 
     // 形
-    &.-family01{//futura
+    &.-family01{//しっぽり明朝
         font-family: "shippori-mincho", sans-serif;
         font-weight: 400;
         font-style: normal;
@@ -53,35 +53,45 @@
         font-weight: 700;
         font-style: normal;
     }
-    &.-family04{//Bebas
-        font-family: 'Bebas Neue', cursive;
+    &.-family04{//garamond
+        font-family: "garamond-premier-pro-display", serif;
+        font-weight: 500;
+        font-style: italic;
     }
     &.-family05{//メイリオ
         font-family:'メイリオ', 'Meiryo', sans-serif;
     }
 
     &.-REQUEST{
-        position: relative;
         background: white;
-        &::after{
-            content: "REQUEST";
-            position: absolute;
-            top:70%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-        }
-    }
-    &.-RESERVE{
-        position: relative;
-        background: $site-color01;
-        &::after{
-            content: "RESERVE";
-            position: absolute;
-            top:70%;
-            left: 50%;
-            transform: translate(-50%,-50%);
+        a{
+            span{
+                position: relative;
+                display: block;
+                &::after{
+                    content: "REQUEST";
+                    position: absolute;
+                    top:70%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+            }
         }
 
+    }
+    &.-RESERVE{
+        background: $site-color01;
+        span{
+            position: relative;
+            display: block;
+            &::after{
+                content: "RESERVE";
+                position: absolute;
+                top:70%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
     }
     &.-TOP{
         position: relative;
@@ -263,21 +273,15 @@
         }
 
     }
-    &.-size3L{//40px
-        font-size: 28px;
+    &.-size3L{//35px
+        font-size: 20px;
         @include mq(tb){
-            font-size: clamp(10px, 3.5vw, 24px);
+            font-size: clamp(28px, 3.5vw, 32px);
         }
-        @include mq(tb-pc1200){
-            font-size: clamp(10px, 3.5vw, 28px);
-        }
-        @include mq(tb-pc1400){
-            font-size: clamp(10px, 3.5vw, 40px);
-        }
-        &.-plan{
-            @include mq(sp){
-                font-size: 26px;
-
+        &.-p35{
+            font-size: 24px;
+            @include mq(tb){
+                font-size: clamp(28px, 4vw, 50px);
             }
         }
 
