@@ -16,17 +16,13 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/query.colorbox-min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/pagetop.js"></script>
-
-    <!-- swiper関係 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <!-- //swiper関係 -->
 
 
     <!-- Global site tag (gtag.js) - Google Analytics --> 
@@ -146,7 +142,7 @@
                 <div class="l-header-nav__inner">
                     <ul class="l-header-nav__lists">
                         <li class="l-header-nav__list"><a href="" class="l-text -sizeM -v02 -family01 -center -TOP">トップ</a></li>
-                        <li class="l-header-nav__list"><a href="" class="l-text -sizeM -v02 -family01 -center -CONCEPT">コンセプト</a></li>
+                        <li class="l-header-nav__list"><a href="" class="l-text -sizeM -v02 -family01 -center -CONCEPT active">コンセプト</a></li>
                         <li class="l-header-nav__list"><a href="" class="l-text -sizeM -v02 -family01 -center -BUILT">新築分譲住宅</a></li>
                         <li class="l-header-nav__list"><a href="" class="l-text -sizeM -v02 -family01 -center -SETSUBI">設備・仕様</a></li>
                         <li class="l-header-nav__list"><a href="" class="l-text -sizeM -v02 -family01 -center -LOCATION">周辺環境/アクセス</a></li>
@@ -158,10 +154,10 @@
                 <div class="l-header-navBox__inner">
                     <div class="l-header-navBox__lists">
                         <div class="l-header-navBox__list">
-                            <a href="" class="l-text -family01 -center -sp-TOP active">トップ</a>
+                            <a href="" class="l-text -family01 -center -sp-TOP">トップ</a>
                         </div>
                         <div class="l-header-navBox__list">
-                            <a href="" class="l-text -family01 -center -sp-CONCEPT">コンセプト</a>
+                            <a href="" class="l-text -family01 -center -sp-CONCEPT active">コンセプト</a>
                         </div>
                         <div class="l-header-navBox__list">
                             <a href="" class="l-text -family01 -center -sp-BUILT">新築分譲住宅</a>
@@ -180,133 +176,27 @@
             </div>
         </header>
         <div class="l-container">
+            <!-- ファーストビュー -->
+            <div class="l-contents -slider -w1200">
+                <div class="l-slider">
+                    <!-- メイン -->
+                    <div class="concept-slider concept-slider01">
+                        <div class="slick-img">
+                            <img src="images/pic/top-slider01-min.jpg" alt="">
+                        </div>
+                        <div class="slick-img">
+                            <img src="images/pic/top-slider02-min.jpg" alt="">
+                        </div>
+                        <div class="slick-img">
+                            <img src="images/pic/top-slider03-min.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <p class="l-text -sizeM -right l-mgt_-30">※当社施行実例</p>
+            </div>
             <div class="l-testBox"></div>
-            <!-- 【　Header　】ファーストビュー -->
-            <div class="l-header l-contents -img-bg">
-                <div class="imgBox">
-                    <img class="pc" src="images/bg/header.png" alt="物件の情報">
-                    <img class="sp" src="images/bg/header_s.jpg" alt="物件の情報">
-                </div>
-            </div>
-            <!-- トップコンテンツ -->
-            <div class="l-contents -img">
-                <img class="pc" src="images/bg/top.png" alt="">
-                <img class="sp" src="images/bg/top_s.jpg" alt="">
-            </div>
-            <!-- コンテンツ1 -->
-            <div id="content1" class="l-contents -img">
-                <img class="pc" src="images/bg/land.png" alt="">
-                <img class="sp" src="images/bg/land_s.jpg" alt="">
-            </div>
-            <!-- contact*4 -->
-            <div class="l-contents -contactArea -box-type"  data-aos="fade">
-                <div class="l-flex--area">
-                    <div class="l-flex--contents -contact-box">
-                        <div class="flexItem">
-                            <a class="l-linkImg -contact-box -box01" href="https://www.jyu-g.co.jp/contents/inquiry?checkid=物件ナンバー">
-                                <img src="images/btn/contact_box_01.png" alt="お問い合わせ">
-                            </a>
-                        </div>
-                        <div class="flexItem">
-                            <a class="l-linkImg -contact-box -box02" href="https://www.jyu-g.co.jp/contents/tour?checkid=物件ナンバー">
-                                <img src="images/btn/contact_box_02.png" alt="見学予約">
-                            </a>
-                        </div>
-                        <div class="flexItem">
-                            <a class="l-linkImg -contact-box -box03" href="https://www.jyu-g.co.jp/contents/regist?form_mode=1">
-                                <img src="images/btn/contact_box_03.png" alt="会員登録">
-                            </a>
-                        </div>
-                        <div class="flexItem">
-                            <a class="l-linkImg -contact-box -box04" href="https://www.jyu-g.co.jp/contents/kantan">
-                                <img src="images/btn/contact_box_04.png" alt="簡単資料請求">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- コンテンツ2 -->
-            <div id="content2" class="l-contents -img">
-                <img class="pc" src="images/bg/location.jpg" alt="">
-                <img class="sp" src="images/bg/location_s.jpg" alt="">
-            </div>
-            <!-- タブ-コンテンツ -->
-            <!-- <div id="content3" class="l-contents -img-bg">
-                <div class="imgBox">
-                    <img class="pc" src="images/bg/tabArea.jpg" alt="">
-                    <img class="sp" src="images/bg/tabArea_s.jpg" alt="">
-                </div>
-                <div class="l-contentsBox -tabArea">
-                    <div class="pc">
-                        <div class="l-flex--area">
-                            <div class="l-flex--contents -tab-box">
-                                <div class="flexItem">
-                                    <a class="l-linkImg -contact-box -box01" href="#park-pc">
-                                        <img src="images/btn/park_btn.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="flexItem">
-                                    <a class="l-linkImg -contact-box -box02" href="#ballpark-pc">
-                                        <img src="images/btn/ballPark_btn.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="flexItem">
-                                    <a class="l-linkImg -contact-box -box03" href="#amusement-pc">
-                                        <img src="images/btn/amusement_btn.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="flexItem">
-                                    <a class="l-linkImg -contact-box -box04" href="#museum-pc">
-                                        <img src="images/btn/museum_btn.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sp">
-                        <div class="l-tabs--area">
-                            <input id="park" type="radio" name="tab-item" checked>
-                            <label class="tab-item" for="park">
-                                <img src="images/btn/park_btn.png" alt="park">
-                            </label>
-                            <input id="ballpark" type="radio" name="tab-item">
-                            <label class="tab-item" for="ballpark">
-                                <img src="images/btn/ballPark_btn.png" alt="ballPark">
-                            </label>
-                            <input id="amusement" type="radio" name="tab-item">
-                            <label class="tab-item" for="amusement">
-                                <img src="images/btn/amusement_btn.png" alt="amusement">
-                            </label>
-                            <input id="museum" type="radio" name="tab-item">
-                            <label class="tab-item -last" for="museum">
-                                <img src="images/btn/museum_btn.png" alt="museum">
-                            </label>
 
-
-                            <div class="tab-content" id="park-content">
-                                <div class="tab-content-img">
-                                    <img src="images/bg/parkArea-bg_s.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="tab-content" id="ballpark-content">
-                                <div class="tab-content-img">
-                                    <img class="sp" src="images/bg/ballParkArea-bg_s.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="tab-content" id="amusement-content">
-                                <div class="tab-content-img">
-                                    <img class="sp" src="images/bg/amusementArea-bg_s.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="tab-content" id="museum-content">
-                                <div class="tab-content-img">
-                                    <img class="sp" src="images/bg/museumArea-bg_s.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
 
@@ -352,81 +242,26 @@
         });
         // 通常スライダー用
         $(function(){
-            $(".nomal-slider").slick({
-                autoplay: true,
-                prevArrow: '<img src="images/btn/prev-arrow.png" class="slide-arrow prev-arrow">',
-                nextArrow: '<img src="images/btn/next-arrow.png" class="slide-arrow next-arrow">',
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                responsive: [ // ブレイクポイントごとに設定を変更
-                    {
-                        breakpoint: 480,
+            $(".concept-slider01").slick({
+                autoplay:true,
+                speed: 2000,
+                dots: true,
+                // dotsClass: 'slide-dots',
+                fade: true,
+                prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+                nextArrow: '<button class="slide-arrow next-arrow"></button>',
+
+                responsive: [{
+                    breakpoint: 480,
                         settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                            cssEase: 'linear', // easing効果を指定
-                            // centerMode: false, //要素を中央寄せ
-                        }
+                        slidesToShow: 1,
+                        centerMode: true,
+                        centerPadding: '20%',
                     }
-                ]
-            });
-            $('.nomal-slider2').slick({
-                infinite: true, // 画像遅延読み込み
-                autoplay: true, // 自動再生
-                autoplaySpeed: 0, // スライドが動くスピード（ミリ秒）
-                speed: 10500,
-                cssEase: 'linear',
-                arrows: false,
-                dots: false, // カルーセル下のドット（現在の表示箇所を視覚化）
-                centerMode: true, //要素を中央寄せ
-                centerPadding:'0px', //両サイドの見えている部分のサイズ
-                slidesToShow:7, // 一度に見えているスライドの数
-                slidesToScroll:1, // スライドが切り替わる際の画像数
-                responsive: [ // ブレイクポイントごとに設定を変更
-                    {
-                        breakpoint: 1980,
-                        settings: {
-                            slidesToShow: 5,
-                            slidesToScroll: 1
-                        }
-                    },
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                            autoplaySpeed: 0,
-                            arrows :false,
-                            speed: 8500, // fade時の切り替えのスピード
-                            cssEase: 'linear', // easing効果を指定
-                            // centerMode: false, //要素を中央寄せ
-                        }
-                    }
-                ]
+                }]
             });
         });
-        // サムネイルスライダー用
-        const sliderThumbnail  = new Swiper(".thumbnail", {
-            slidesPerView: 6, // サムネイルの枚数
-        });
-        const swiperMain = new Swiper(".main", {
-            loop: true,
-            pagination:{
-                el:".swiper-pagination",
-                type:"bullets",
-                clickable:"true"
-            } ,
-            thumbs: {
-                swiper: sliderThumbnail,
-            },
-        });
+
     </script>
 </body>
 </html>

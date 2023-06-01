@@ -94,6 +94,9 @@
     @include mq(sp){
         background: $nav-hover-bg !important;
     }
+    @include mq(tb){
+        border-bottom: .5vh solid $nav-active-bg !important;
+    }
 }
 
 .y-border{
