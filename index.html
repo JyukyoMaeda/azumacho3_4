@@ -42,6 +42,17 @@
             location.replace(location.href.replace(/http:/, 'https:'));
         }
     </script>
+    <!-- Font -->
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'xix3mpj',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
 
 </head>
 <body class="js_humburgerClose">
@@ -94,7 +105,7 @@
                         <div class="flexItem -center-contentsArea">
                             <div class="l-flex--area">
                                 <div class="l-flex--contents -header-c-inner">
-                                    <div class="flexItem -textArea l-text">
+                                    <div class="flexItem -textArea l-text -family01 -lh-2">
                                         <span>
                                             開放感ある整然とした街並み、そして緑あふれる周辺環境。<br>
                                             子育て世代に相応しい永住の地、<br>
@@ -111,21 +122,33 @@
                         <div class="flexItem -right-contactArea">
                             <div class="l-flex--area">
                                 <div class="l-flex--contents -header-contactArea">
-                                    <div class="flexItem l-text -black -center -REQUEST">
+                                    <div class="flexItem l-text -family01 -black -center -REQUEST">
                                         <a href="">
                                             資料請求
                                         </a>
                                     </div>
-                                    <div class="flexItem l-text -white -center -RESERVE">
+                                    <div class="flexItem l-text -family01 -white -center -RESERVE">
                                         <a href="">
                                             見学予約
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                            <p class="l-text -center">売主物件につき仲介手数料不要</p>
+                            <p class="l-text -family01 -center">売主物件につき仲介手数料不要</p>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="pc l-header-nav">
+                <div class="l-header-nav__inner">
+                    <ul class="l-header-nav__lists">
+                        <li class="l-header-nav__list"><a href="" class="l-text -family01 -center -TOP">トップ</a></li>
+                        <li class="l-header-nav__list"><a href="" class="l-text -family01 -center -CONCEPT">コンセプト</a></li>
+                        <li class="l-header-nav__list"><a href="" class="l-text -family01 -center -BUILT">新築分譲住宅</a></li>
+                        <li class="l-header-nav__list"><a href="" class="l-text -family01 -center -SETSUBI">設備・仕様</a></li>
+                        <li class="l-header-nav__list"><a href="" class="l-text -family01 -center -LOCATION">周辺環境/アクセス</a></li>
+                        <li class="l-header-nav__list"><a href="" class="l-text -family01 -center -JYUKYO">住協の家づくり</a></li>
+                    </ul>
                 </div>
             </div>
         </header>

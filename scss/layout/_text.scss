@@ -37,13 +37,10 @@
 
     // 形
     &.-family01{//futura
-        font-family: "futura-pt-bold", sans-serif;
+        font-family: "shippori-mincho", sans-serif;
+        font-weight: 400;
         font-style: normal;
-        &.-n{
-            font-family: futura-pt, sans-serif;
-            font-weight: 300;
-            font-style: normal;
-        }
+
     }
     &.-family02{//遊ゴシック
         font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
@@ -72,7 +69,82 @@
         }
     }
     &.-RESERVE{
+        position: relative;
         background: $site-color01;
+        &::after{
+            content: "RESERVE";
+            position: absolute;
+            top:70%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+    }
+    &.-TOP{
+        position: relative;
+        &::after{
+            content: "TOP";
+            font-size: .6vw;
+            position: absolute;
+            top:30%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    &.-CONCEPT{
+        position: relative;
+        &::after{
+            content: "CONCEPT";
+            font-size: .6vw;
+            position: absolute;
+            top:30%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    &.-BUILT{
+        position: relative;
+        &::after{
+            content: "BUILT HOUSE";
+            font-size: .6vw;
+            position: absolute;
+            top:30%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    &.-SETSUBI{
+        position: relative;
+        &::after{
+            content: "EQUIPMENT";
+            font-size: .6vw;
+            position: absolute;
+            top:30%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    &.-LOCATION{
+        position: relative;
+        &::after{
+            content: "LOCATION";
+            font-size: .6vw;
+            position: absolute;
+            top:30%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    &.-JYUKYO{
+        position: relative;
+        &::after{
+            content: "JYUKYO QUALITY";
+            font-size: .5vw;
+            position: absolute;
+            top:30%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
     }
 
     // 色

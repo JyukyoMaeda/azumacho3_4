@@ -322,7 +322,7 @@ body {
   margin-top: 1vh;
 }
 .l-flex--area .l-flex--contents.-header-top .flexItem.-timeArea {
-  width: 45%;
+  width: 35%;
 }
 .l-flex--area .l-flex--contents.-header-c-inner {
   display: flex;
@@ -342,7 +342,7 @@ body {
 .l-flex--area .l-flex--contents.-header-contactArea .flexItem a {
   display: block;
   width: 100%;
-  padding: 1vh 0 3vh;
+  padding: 1.5vh 0 4vh;
 }
 .l-flex--area .l-flex--contents.-tel {
   display: flex;
@@ -604,6 +604,32 @@ body {
   background: white;
   border-bottom: 1px solid rgba(0, 0, 0, 0.39);
 }
+.l-header .l-header-nav__inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+.l-header .l-header-nav__lists {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.l-header .l-header-nav__list {
+  width: 16.6666666667%;
+}
+.l-header .l-header-nav__list a {
+  display: block;
+  width: 100%;
+  color: black;
+  background: white;
+  border-bottom: 0.5vh solid white;
+  padding: 4vh 0 1.5vh;
+  transition: 0.3s all;
+}
+.l-header .l-header-nav__list a:hover {
+  border-bottom: 0.5vh solid #D0B580;
+}
+
 .y-border {
   width: auto;
   position: relative;
@@ -1333,12 +1359,8 @@ body {
   font-weight: bold;
 }
 .l-text.-family01 {
-  font-family: "futura-pt-bold", sans-serif;
-  font-style: normal;
-}
-.l-text.-family01.-n {
-  font-family: futura-pt, sans-serif;
-  font-weight: 300;
+  font-family: "shippori-mincho", sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 .l-text.-family02 {
@@ -1367,7 +1389,81 @@ body {
   transform: translate(-50%, -50%);
 }
 .l-text.-RESERVE {
+  position: relative;
   background: #D0B580;
+}
+.l-text.-RESERVE::after {
+  content: "RESERVE";
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.l-text.-TOP {
+  position: relative;
+}
+.l-text.-TOP::after {
+  content: "TOP";
+  font-size: 0.6vw;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.l-text.-CONCEPT {
+  position: relative;
+}
+.l-text.-CONCEPT::after {
+  content: "CONCEPT";
+  font-size: 0.6vw;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.l-text.-BUILT {
+  position: relative;
+}
+.l-text.-BUILT::after {
+  content: "BUILT HOUSE";
+  font-size: 0.6vw;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.l-text.-SETSUBI {
+  position: relative;
+}
+.l-text.-SETSUBI::after {
+  content: "EQUIPMENT";
+  font-size: 0.6vw;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.l-text.-LOCATION {
+  position: relative;
+}
+.l-text.-LOCATION::after {
+  content: "LOCATION";
+  font-size: 0.6vw;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.l-text.-JYUKYO {
+  position: relative;
+}
+.l-text.-JYUKYO::after {
+  content: "JYUKYO QUALITY";
+  font-size: 0.5vw;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .l-text.-white {
   color: white;

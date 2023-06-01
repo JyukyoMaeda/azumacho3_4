@@ -5,6 +5,38 @@
     .l-header-contents{
 
     }
+    .l-header-nav{
+        &__inner{
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+        }
+        &__lists{//ul
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+        }
+        &__list{//li
+            width: calc(100% / 6);
+            a{
+                display: block;
+                width: 100%;
+                color: black;
+                background: white;
+                border-bottom: .5vh solid white;
+                padding: 4vh 0 1.5vh;
+                transition: .3s all;
+                &:hover{
+                    // font-weight: bold;
+                    // color: white;
+                    // background: $site-color01;
+                    border-bottom: .5vh solid $site-color01;
+
+                }
+            }
+            
+        }
+    }
 }
 
 
