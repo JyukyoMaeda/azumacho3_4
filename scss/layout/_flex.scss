@@ -94,17 +94,24 @@
 			}
 		}
 		&.-columnBox{
-			display: flex;
-			flex-wrap: nowrap;
-			justify-content: space-around;
+
 			align-items: center;
+			@include mq(tb){
+				display: flex;
+				flex-wrap: nowrap;
+				justify-content: space-around;
+			}
 			.flexItem{
-				padding: 2%;
+				padding: 2% 0;
 				&.title{
-					width: 30%;
+					@include mq(tb){
+						width: 30%;
+					}
 				}
 				&.des{
-					width: 70%;
+					@include mq(tb){
+						width: 70%;
+					}
 				}
 			}
 		}

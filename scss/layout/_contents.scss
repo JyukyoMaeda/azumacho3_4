@@ -5,9 +5,15 @@
 		width: 100%;
 		max-width: 1200px;
 		margin: auto;
-		// @include mq(sp){
-		// 	width: 95%;
-		// }
+		&.-tb-w95{
+		    @include mq(tb){
+				width: 95%;
+		    }
+			// @include mq(tb-pc1000){
+			// 	width: 100%;
+			// }
+		}
+
 	}
 	&.-img{// 背景画像のみ
 		width: 100%;

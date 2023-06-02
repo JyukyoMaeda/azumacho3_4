@@ -265,7 +265,7 @@
         }
     }
     &.-sizeL{//24px
-        font-size: 16px;
+        font-size: 18px;
         @include mq(tb){
             font-size: clamp(10px, 1.8vw, 24px);
         }
