@@ -5,9 +5,9 @@
 		width: 100%;
 		max-width: 1200px;
 		margin: auto;
-		@include mq(sp){
-			width: 95%;
-		}
+		// @include mq(sp){
+		// 	width: 95%;
+		// }
 	}
 	&.-img{// 背景画像のみ
 		width: 100%;
@@ -70,7 +70,11 @@
 		}
 	}
 	&.-textArea{
-
+		width: 90%;
+		height: auto;
+		@include mq(tb){
+			width: 100%;
+		}
 	}
 }
 

@@ -3,20 +3,32 @@
     line-height: 1.7;
     &.-lh-1{
         line-height: 1;
-        @include mq(sp){
-            line-height: 1.5;
-        }
+        // @include mq(sp){
+        //     line-height: 1.5;
+        // }
     }
     &.-lh-2{
         line-height: 2;
-        @include mq(sp){
-            line-height: 1.5;
-        }
+        // @include mq(sp){
+        //     line-height: 1.5;
+        // }
     }
     // 位置
     &.-left{text-align: start;}
     &.-center{text-align: center;}
     &.-right{text-align: end;}
+
+    &.-sp-left{
+        @include mq(sp){
+            text-align: start !important;
+        }
+    }
+    &.-sp-center{
+        @include mq(sp){
+            text-align: center !important;
+        }
+    }
+
 
     &.-p{
         position: relative;
@@ -236,12 +248,9 @@
 
     // 大きさ
     &.-size10{
-        font-size: 10px;
+        font-size: 12px;
         @include mq(sp){
-            display: block;
-            transform: scale(0.6);
-            margin-left: -110px;
-            width: 160%;
+            font-size: 10px;
         }
     }
     &.-sizeM{
@@ -263,7 +272,7 @@
 
     }
     &.-sizeLL{//30px
-        font-size: 28px;
+        font-size: 18px;
         @include mq(tb){
             font-size: clamp(10px, 2.5vw, 30px);
         }
@@ -280,7 +289,13 @@
 
     }
     &.-size3L{//35px
-        font-size: 24px;
+        font-size: 20px;
+        &.-s30{
+            @include mq(sp){
+                font-size: 30px;
+            }
+        }
+        // font-size: 24px;
         @include mq(tb){
             font-size: 2.5rem;
         }
@@ -289,7 +304,8 @@
         }
     }
     &.-size4L{//48px
-        font-size: 28px;
+        font-size: 60px;
+        // font-size: 28px;
         @include mq(tb){
             font-size: 5.5rem;
         }

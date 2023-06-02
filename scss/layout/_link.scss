@@ -281,6 +281,7 @@
 }
 
 .l-linkText{
+    position: relative;
     display: inline-block;
     color: $main-color--b;
     transition: all .5s;
@@ -292,6 +293,31 @@
     &.-borderBox{
         width: auto;
         border: 1px solid black;
-        padding: 1vh 1.5vw;
+        padding: 1.2vh 7vw;
+        @include mq(tb){
+            padding: 2.5vh 3.5vw;
+        }
+        &:hover{
+            color: black;
+            background: $site-color01;
+            transform: scale(1.1);
+        }
     }
+    &::after{
+        position: absolute;
+        top: 52.3%;
+        left: 85%;
+        transform: translate(-50%, -50%);
+        content: ">";
+        color: black;
+        font-size: 12px;
+        @include mq(tb){
+            font-size: 16px;
+        }
+    }
+}
+
+.l-linkArea{
+    margin: auto;
+    text-align: center;
 }
