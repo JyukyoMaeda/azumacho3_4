@@ -49,6 +49,27 @@
 body{
 	animation: fadein 1s forwards;
 }
+img{
+	pointer-events: none;
+	user-drag: none;
+	-webkit-user-drag: none;
+	-moz-user-select: none;
+}
+
+
+
+
+.-s-w90{
+	@include mq(sp){
+		width: 90%;
+		margin: auto;
+	}
+}
+.-tb-w95{
+	@include mq(tb){
+		width: 95%;
+	}
+}
 
 
 // 幅調整用 margin = 要素外の空間

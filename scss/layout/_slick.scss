@@ -1,19 +1,17 @@
 
 .l-slider {
-    .access-slider{
-        margin: 30px auto auto;
-        width: 75vw;
-        @include mq(tb){
-            margin: 60px auto auto;
-            width: 35vw;
-        }
-        @include mq(pc){
-            margin: 145px auto auto;
-            width: 35vw;
-        }
-
+    .location-slider{
         .slick-img{
-            margin-bottom: 2vh;
+            // margin-bottom: 2vh;
+            @include mq(sp){
+                width: 100vw !important;
+                padding: 0 3.5vw;
+            }
+            @include mq(tb){
+                padding: 0 10px;
+            }
+            @include mq(pc){
+            }
         }
     }
 }

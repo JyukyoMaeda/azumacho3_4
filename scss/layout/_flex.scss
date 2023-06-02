@@ -116,6 +116,48 @@
 			}
 		}
 
+		&.-flexView{
+			@include mq(tb){
+				display: flex;
+				flex-wrap: nowrap;
+				justify-content: space-around;
+			}
+			.flexItem{
+				&.-textArea{
+					@include mq(sp){
+						padding: 0 5%;
+					}
+					@include mq(tb){
+						width: 35%;
+						padding: 0 0 0 2%;
+					}
+					@include mq(tb-pc1200){
+						padding: 0;
+					}
+					.title{
+						color: $site-color01;
+					}
+					.des-box{
+						@include mq(tb){
+							padding: 0 5%;
+						}
+					}
+				}
+				&.-picArea{
+					@include mq(tb){
+						width: 65%;
+					}
+					.pic-inner{
+						@include mq(tb){
+							width: auto;
+							height: 90%;
+							overflow: hidden;
+						}
+					}
+				}
+			}
+		}
+
 		&.-tel{//電話番号エリア
 			display: flex;
 			flex-wrap: nowrap;

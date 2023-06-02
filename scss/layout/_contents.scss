@@ -5,15 +5,6 @@
 		width: 100%;
 		max-width: 1200px;
 		margin: auto;
-		&.-tb-w95{
-		    @include mq(tb){
-				width: 95%;
-		    }
-			// @include mq(tb-pc1000){
-			// 	width: 100%;
-			// }
-		}
-
 	}
 	&.-img{// 背景画像のみ
 		width: 100%;
@@ -37,7 +28,8 @@
 					margin: auto;
 				}
 			}
-			&.-kukaku{
+			&.-kukaku,
+			&.-location-trainBox{
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
