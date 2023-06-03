@@ -8,14 +8,14 @@
 			flex-wrap: nowrap;
 			align-items: center;
 			justify-content: center;
-			padding: 1vh 1.5vw .5vh;
+			padding: 1vh 2.5vw 0;
 			@include mq(tb){
-				padding: 2vh 0;
+				padding: 2vh 0 0;
 			}
 			.flexItem{
 				&.-logoArea{
 					width: calc(35%);
-					padding-right: 1vw;
+					// padding-right: 1vw;
 					@include mq(tb){
 						width: calc(10%);
 						margin-left: auto;
@@ -40,7 +40,7 @@
 					width: calc(20%);
 					margin-right: auto;
 					p{
-						margin-top: 1vh;
+						margin-top: .5vh;
 					}
 				}
 				&.-textArea{
@@ -85,7 +85,7 @@
 					height: 100%;
 					transition: .5s all;
 					span{
-						padding: 1vh 0 4vh;
+						padding: 1vh 0 2.8vh;
 					}
 					&:hover{
 						transform: scale(1.1);

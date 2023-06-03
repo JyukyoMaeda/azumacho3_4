@@ -30,7 +30,7 @@
             }
             &.-v02{
                 @include mq(tb){
-                    font-size: clamp(12px, 1.5vw, 18px);
+                    font-size: clamp(12px, 1vw, 18px);
                 }
             }
         }
@@ -162,8 +162,9 @@
                 display: block;
                 &::after{
                     content: "REQUEST";
+                    font-size: .65vw;
                     position: absolute;
-                    top:70%;
+                    top: 70%;
                     left: 50%;
                     transform: translate(-50%,-50%);
                 }
@@ -178,8 +179,9 @@
             display: block;
             &::after{
                 content: "RESERVE";
+                font-size: .65vw;
                 position: absolute;
-                top:70%;
+                top: 70%;
                 left: 50%;
                 transform: translate(-50%,-50%);
             }
@@ -190,8 +192,9 @@
         &::after{
             content: "TOP";
             font-size: .6vw;
+            font-weight: bold;
             position: absolute;
-            top:30%;
+            top:34%;
             left: 50%;
             transform: translate(-50%,-50%);
         }
@@ -207,8 +210,9 @@
         &::after{
             content: "CONCEPT";
             font-size: .6vw;
+            font-weight: bold;
             position: absolute;
-            top:30%;
+            top:34%;
             left: 50%;
             transform: translate(-50%,-50%);
         }
@@ -224,8 +228,9 @@
         &::after{
             content: "BUILT HOUSE";
             font-size: .6vw;
+            font-weight: bold;
             position: absolute;
-            top:30%;
+            top:34%;
             left: 50%;
             transform: translate(-50%,-50%);
         }
@@ -241,8 +246,9 @@
         &::after{
             content: "EQUIPMENT";
             font-size: .6vw;
+            font-weight: bold;
             position: absolute;
-            top:30%;
+            top:34%;
             left: 50%;
             transform: translate(-50%,-50%);
         }
@@ -258,8 +264,9 @@
         &::after{
             content: "LOCATION";
             font-size: .6vw;
+            font-weight: bold;
             position: absolute;
-            top:30%;
+            top:34%;
             left: 50%;
             transform: translate(-50%,-50%);
         }
@@ -274,9 +281,10 @@
         position: relative;
         &::after{
             content: "JYUKYO QUALITY";
-            font-size: .6vw;
+            font-size: .5vw;
+            font-weight: bold;
             position: absolute;
-            top:30%;
+            top:34%;
             left: 50%;
             transform: translate(-50%,-50%);
         }
