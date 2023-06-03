@@ -117,8 +117,11 @@
 		}
 
 		&.-flexView{
+			display: flex;
+			@include mq(sp){
+				flex-direction: column;
+			}
 			@include mq(tb){
-				display: flex;
 				flex-wrap: nowrap;
 				justify-content: space-around;
 			}
@@ -153,6 +156,152 @@
 							height: 90%;
 							overflow: hidden;
 						}
+					}
+				}
+			}
+			&.-p02{
+				@include mq(tb){
+					display: flex;
+					flex-wrap: nowrap;
+					justify-content: space-around;
+				}
+				.flexItem{
+					&.-textArea{
+						@include mq(sp){
+							padding: 0 5%;
+							order: 2;
+						}
+						@include mq(tb){
+							width: 48%;
+							padding: 0 1% 0 0 !important;
+						}
+						@include mq(tb-pc1200){
+							// padding: 0;
+						}
+						.title{
+							color: black;
+							letter-spacing: -1px;
+						}
+						.btm-pic{
+							@include mq(tb){
+								margin: 5% 23%;
+							}
+						}
+						.des-box{
+						}
+					}
+					&.-picArea{
+						@include mq(sp){
+							order: 1;
+							margin-bottom: 5vh;
+						}
+						@include mq(tb){
+							width: 52%;
+						}
+						.pic-inner{
+							@include mq(tb){
+								width: auto;
+								height: 90%;
+								overflow: hidden;
+							}
+						}
+					}
+				}
+			}
+		}
+		&.-flexContent__box{
+			@include mq(sp){
+				display: flex;
+				flex-wrap: nowrap;
+			}
+			.flexItem{
+				@include mq(sp){
+					&:nth-child(1){
+						width: 60%;
+						padding-right: 5%;
+					}
+					&:nth-child(2){
+						width: 40%;
+					}
+				}
+			}
+		}
+		&.-built--plan{
+			display: flex;
+			@include mq(sp){
+				flex-direction: column;
+			}
+			@include mq(tb){
+				flex-wrap: nowrap;
+			}
+			.flexItem{
+				width: 100%;
+				@include mq(tb){
+					&:nth-child(1){
+						width: 65%;
+					}
+					&:nth-child(2){
+						width: 35%;
+						padding-left: 1%;
+					}
+				}
+			}
+
+		}
+		&.-built--storagePlan{
+			display: flex;
+			flex-wrap: wrap;
+			width: 60%;
+			margin: auto;
+			.flexItem{
+				width: 100%;
+				@include mq(tb){
+					&:nth-child(1){
+						width: 50%;
+						padding-right: 1%;
+					}
+					&:nth-child(2){
+						width: 50%;
+						padding-left: 1%;
+					}
+				}
+			}
+		}
+		&.-built--siding{
+			display: flex;
+			flex-wrap: wrap;
+			margin: auto;
+			@include mq(tb){
+				flex-wrap: nowrap;
+			}
+			.flexItem{
+				@include mq(sp){
+					&:nth-child(1){
+						width: 50%;
+						padding-right: 1%;
+					}
+					&:nth-child(2){
+						width: 50%;
+						padding-left: 1%;
+					}
+					&:nth-child(3){
+						width: 100%;
+						// padding-left: 1%;
+					}
+				}
+				@include mq(tb){
+					&:nth-child(1){
+						width: 33.3333%;
+						padding-right: 1%;
+					}
+					&:nth-child(2){
+						width: 33.3333%;
+						padding-left: 1%;
+					}
+					&:nth-child(3){
+						width: 33.3333%;
+    					padding-top: 4vh;
+						padding-left: 1%;
 					}
 				}
 			}

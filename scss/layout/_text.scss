@@ -4,8 +4,16 @@
     &.-lh-1{
         line-height: 1;
     }
+    &.-sp-lh-1_5{
+        @include mq(sp){
+            line-height: 1.5;
+        }
+    }
     &.-lh-2{
         line-height: 2;
+    }
+    &.-lh-25{
+        line-height: 2.5;
     }
 
         // 大きさ

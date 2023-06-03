@@ -1,4 +1,14 @@
-
+.letter{
+	&-s01{
+		letter-spacing: -11px
+	}
+	&-s02{
+		letter-spacing: -17px
+	}
+	&-s03{
+		letter-spacing: -9px
+	}
+}
 
 // -----------------------------------------------
 // 開発中
@@ -124,10 +134,16 @@ img{
 	}
 }
 .l-mgb_10{
-	margin-bottom : 5vh !important;
+	// margin-bottom : 5vh !important;
+	margin-bottom : 8vh !important;
 	&.-s_1{
 		@include mq(sp){
 			margin-bottom: 1vh !important;
+		}
+	}
+	&.-s_5{
+		@include mq(sp){
+			margin-bottom: 5vh !important;
 		}
 	}
 	@include mq(tb){

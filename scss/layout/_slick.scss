@@ -1,13 +1,34 @@
 
 .l-slider {
+    // 周辺環境
     .location-slider{
         .slick-img{
-            // margin-bottom: 2vh;
             @include mq(sp){
                 width: 100vw !important;
                 padding: 0 3.5vw;
             }
             @include mq(tb){
+                padding: 0 10px;
+            }
+            @include mq(pc){
+            }
+        }
+    }
+    // 新築分譲住宅
+    .built-slider{
+        @include mq(sp){
+            // padding-bottom: 1vh;
+        }
+        .slick-img{
+            img{
+                margin-bottom: .5vh;
+            }
+            @include mq(sp){
+                // width: 100vw !important;
+                margin: 0 10px;
+            }
+            @include mq(tb){
+                // width: 33.3333% !important;
                 padding: 0 10px;
             }
             @include mq(pc){
