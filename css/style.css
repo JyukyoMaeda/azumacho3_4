@@ -112,7 +112,7 @@ p {
   }
 }
 body {
-  animation: fadein 1s forwards;
+  animation: fadein 2s forwards;
 }
 
 img {
