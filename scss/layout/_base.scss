@@ -98,6 +98,12 @@ img{
 		margin-top: 10vh !important;
 	}
 }
+.l-mgt_10{
+	margin-top: 5vh !important;
+	@include mq(tb){
+		margin-top: 10vh !important;
+	}
+}
 .l-mgt_-10{
 	margin-top: -5px !important;
 	@media screen and (min-width: 767px){

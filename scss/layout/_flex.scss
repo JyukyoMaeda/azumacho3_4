@@ -144,6 +144,13 @@
 						@include mq(tb){
 						    padding: 0 2% 0 10%;
 						}
+						&.-fuzimiPark{
+							@include mq(tb){
+								.toho{
+									padding-right: 30%;
+								}
+							}
+						}
 					}
 				}
 				&.-picArea{

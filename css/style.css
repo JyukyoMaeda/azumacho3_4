@@ -153,6 +153,15 @@ img {
   }
 }
 
+.l-mgt_10 {
+  margin-top: 5vh !important;
+}
+@media screen and (min-width: 767px) {
+  .l-mgt_10 {
+    margin-top: 10vh !important;
+  }
+}
+
 .l-mgt_-10 {
   margin-top: -5px !important;
 }
@@ -631,6 +640,11 @@ img {
 @media screen and (min-width: 767px) {
   .l-flex--area .l-flex--contents.-flexView .flexItem.-textArea .des-box {
     padding: 0 2% 0 10%;
+  }
+}
+@media screen and (min-width: 767px) {
+  .l-flex--area .l-flex--contents.-flexView .flexItem.-textArea .des-box.-fuzimiPark .toho {
+    padding-right: 30%;
   }
 }
 @media screen and (min-width: 767px) {
