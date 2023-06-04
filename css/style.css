@@ -467,7 +467,7 @@ img {
 }
 @media screen and (min-width: 767px) {
   .l-contents.-img-bg.-pc80 {
-    width: 55%;
+    width: 45%;
   }
 }
 .l-contents.-textArea {
