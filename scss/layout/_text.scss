@@ -59,7 +59,7 @@
         &.-sizeLL{//30px
             font-size: 18px;
             @include mq(tb){
-                font-size: clamp(10px, 2.5vw, 30px);
+                font-size: clamp(10px, 2.5vw, 28px);
             }
             &.-s24{
                 @include mq(sp){

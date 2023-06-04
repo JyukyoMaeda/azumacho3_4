@@ -201,6 +201,10 @@ img {
   }
 }
 
+.l-mgb_2 {
+  margin-bottom: 2vh !important;
+}
+
 .l-mgb_3 {
   margin-bottom: 2vh !important;
 }
@@ -675,7 +679,7 @@ img {
 @media screen and (min-width: 767px) {
   .l-flex--area .l-flex--contents.-flexView.-p02 .flexItem.-textArea {
     width: 48%;
-    padding: 0 1% 0 0 !important;
+    padding: 0 5% 0 0 !important;
   }
 }
 .l-flex--area .l-flex--contents.-flexView.-p02 .flexItem.-textArea .title {
@@ -2122,7 +2126,7 @@ img {
 }
 @media screen and (min-width: 767px) {
   .l-text.-sizeLL {
-    font-size: clamp(10px, 2.5vw, 30px);
+    font-size: clamp(10px, 2.5vw, 28px);
   }
 }
 @media screen and (max-width: 768px) {
