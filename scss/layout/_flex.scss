@@ -128,10 +128,10 @@
 			.flexItem{
 				&.-textArea{
 					@include mq(sp){
-						padding: 0 5%;
+						padding: 0 3%;
 					}
 					@include mq(tb){
-						width: 35%;
+						width: 40%;
 						padding: 0 0 0 2%;
 					}
 					@include mq(tb-pc1200){
@@ -142,13 +142,13 @@
 					}
 					.des-box{
 						@include mq(tb){
-							padding: 0 5%;
+						    padding: 0 2% 0 10%;
 						}
 					}
 				}
 				&.-picArea{
 					@include mq(tb){
-						width: 65%;
+						width: 60%;
 					}
 					.pic-inner{
 						@include mq(tb){
@@ -302,6 +302,189 @@
 						width: 33.3333%;
     					padding-top: 4vh;
 						padding-left: 1%;
+					}
+				}
+			}
+		}
+		&.-setsubi-titleArea{
+			display: flex;
+			@include mq(sp){
+				flex-direction: column;
+			}
+			@include mq(tb){
+				flex-wrap: nowrap;
+				justify-content: space-around;
+			}
+			.flexItem{
+				&:nth-child(1){
+					width: 82%;
+					@include mq(sp){
+						width: 100%;
+					}
+				}
+				&:nth-child(2){
+					width: 18%;
+					@include mq(sp){
+						width: 30%;
+						margin-left: auto;
+					}
+				}
+			}
+			&.-v02{
+				.flexItem{
+					&:nth-child(1){
+						width: 85%;
+						@include mq(sp){
+							width: 100%;
+						}
+					}
+					&:nth-child(2){
+						width: 15%;
+						@include mq(sp){
+							width: 28%;
+							margin-left: auto;
+						}
+					}
+				}
+			}
+		}
+		&.-setsubi-itemArea{
+			display: flex;
+			flex-wrap: wrap;
+			@include mq(tb){
+				flex-wrap: nowrap;
+				justify-content: space-between;
+			}
+			.flexItem{
+				width: 30%;
+				&:nth-child(1){
+					@include mq(sp){
+						width: 100%;
+					}
+				}
+				&:nth-child(2){
+					@include mq(sp){
+						width: 50%;
+						padding-right: .5%;
+					}
+				}
+				&:nth-child(3){
+					@include mq(sp){
+						width: 50%;
+						padding-left: .5%;
+					}
+				}
+			}
+		}
+		&.-setsubi-itemArea02{
+			display: flex;
+			@include mq(sp){
+				flex-direction: column;
+			}
+			@include mq(tb){
+				flex-wrap: nowrap;
+				justify-content: space-between;
+			}
+			.flexItem{
+				&:nth-child(1){
+					width: 70%;
+					padding-right: 5%;
+					@include mq(sp){
+						width: 100%;
+						padding-right: 0 !important;
+					}
+				}
+				&:nth-child(2){
+					width: 30%;
+					@include mq(sp){
+						width: 100%;
+						
+					}
+				}
+			}
+		}
+		&.-setsubi-itemArea03{
+			display: flex;
+			@include mq(sp){
+				// flex-direction: column;
+			}
+			@include mq(tb){
+				flex-wrap: nowrap;
+				justify-content: space-between;
+			}
+			.flexItem{
+				&.-leftBox{
+					width: 30%;
+					padding-right: 2%;
+					@include mq(sp){
+						width: 50%;
+						// padding-right: 0 !important;
+					}
+				}
+				&.-rightBox{
+					width: 70%;
+					// padding-right: 5%;
+					@include mq(sp){
+						width: 50%;
+						// padding-right: 0 !important;
+					}
+				}
+			}
+		}
+		&.-setsubi-itemArea03_01{//１行目
+			display: flex;
+			@include mq(sp){
+				flex-direction: column;
+			}
+			@include mq(tb){
+				flex-wrap: nowrap;
+				justify-content: space-between;
+			}
+			.flexItem{
+				width: 100%;
+				&:nth-child(1){
+					padding-right: 0;
+					@include mq(tb){
+						width: 40%;
+						padding-right: 5%;
+					}
+				}
+				&:nth-child(2){
+					@include mq(tb){
+						width: 60%;
+					}
+				}
+				&.-w{
+					width: 100%;
+				}
+			}
+
+
+		}
+
+
+
+
+
+
+		// スマホ > 横並び
+		&.-setsubi-itemArea_sp{
+			display: flex;
+			@include mq(sp){
+				flex-wrap: nowrap;
+				justify-content: space-between;
+			}
+			.flexItem{
+				&:nth-child(1){
+					@include mq(sp){
+						width: 50%;
+						padding-right: 2.5%;
+					}
+				}
+				&:nth-child(2){
+					@include mq(sp){
+						width: 50%;
+						padding-left: 2.5%;
 					}
 				}
 			}

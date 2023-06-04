@@ -4,6 +4,11 @@
     &.-lh-1{
         line-height: 1;
     }
+    &.-sp-lh-1{
+        @include mq(sp){
+            line-height: 1;
+        }
+    }
     &.-sp-lh-1_5{
         @include mq(sp){
             line-height: 1.5;
@@ -39,6 +44,16 @@
             @include mq(tb){
                 font-size: clamp(10px, 1.8vw, 24px);
             }
+            &.-s15{
+                @include mq(sp){
+                    font-size: 15px;
+                }
+            }
+            &.-s16{
+                @include mq(sp){
+                    font-size: 16px;
+                }
+            }
     
         }
         &.-sizeLL{//30px
@@ -51,12 +66,16 @@
                     font-size: 24px;
                 }
             }
+            &.-s17{
+                @include mq(sp){
+                    font-size: 17px;
+                }
+            }
             &.-s18{
                 @include mq(sp){
                     font-size: 18px;
                 }
             }
-    
         }
         &.-size3L{//35px
             font-size: 20px;
@@ -79,7 +98,6 @@
         }
         &.-size4L{//48px
             font-size: 60px;
-            // font-size: 28px;
             @include mq(tb){
                 font-size: 5.5rem;
             }
@@ -126,7 +144,6 @@
             background: #333333;
         }
     }
-  
     // 太さ
     &.-b{font-weight: bold !important;}
 
@@ -310,13 +327,10 @@
         }
     }
     &.-red{
-        // color: $text-red;
     }
     &.-blue{
-        // color: $text-blue;
     }
     &.-green{
-        // color: $text-green;
         text-shadow: 1px 1px 10px rgb(236, 236, 236);
     }
     &.-pink{

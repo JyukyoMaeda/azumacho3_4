@@ -77,7 +77,7 @@ img{
 }
 .-tb-w95{
 	@include mq(tb){
-		width: 95%;
+		width: 95% !important;
 	}
 }
 
@@ -110,9 +110,23 @@ img{
 		margin-top: -30px !important;
 	}
 }
+.l-mgb_-2_s{
+	@include mq(sp){
+		margin-top: -2vh !important;
+	}
+}
+
+
+
 // 下のみ
 .l-mgb_1_s{
 	@include mq(sp){
+		margin-bottom: 1vh !important;
+	}
+}
+.l-mgb_1{
+	margin-bottom: 1vh !important;
+	@include mq(tb){
 		margin-bottom: 1vh !important;
 	}
 }
@@ -134,7 +148,6 @@ img{
 	}
 }
 .l-mgb_10{
-	// margin-bottom : 5vh !important;
 	margin-bottom : 8vh !important;
 	&.-s_1{
 		@include mq(sp){

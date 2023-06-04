@@ -6,6 +6,11 @@
 		max-width: 1200px;
 		margin: auto;
 	}
+	&.-w93-s{
+		@include mq(sp){
+			width: 93%;
+		}
+	}
 	&.-img{// 背景画像のみ
 		width: 100%;
 		height: auto;
@@ -30,7 +35,8 @@
 			}
 			&.-kukaku,
 			&.-location-trainBox,
-			&.-builtPlanText{
+			&.-builtPlanText,
+			&.-setsubiText{
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
