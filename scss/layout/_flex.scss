@@ -57,6 +57,9 @@
 				}
 				&.-timeArea{
 					width: 95%;
+					@include mq(sp){
+						// margin-top: .2vh;
+					}
 					@include mq(tb){
 						width: 33%;
 					}
