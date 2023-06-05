@@ -38,6 +38,11 @@
                     font-size: clamp(12px, 1vw, 18px);
                 }
             }
+            &.-v03{
+                @include mq(tb){
+                    font-size: clamp(10px, 1vw, 16px);
+                }
+            }
         }
         &.-sizeL{//24px
             font-size: 18px;
@@ -103,6 +108,12 @@
             }
             @include mq(tb-pc1400){
                 font-size: 7rem;
+            }
+            &.-v02{
+                
+                @include mq(tb){
+                    font-size: 5.5rem;
+                }
             }
         }
     // 位置
@@ -211,7 +222,7 @@
             font-size: .6vw;
             font-weight: bold;
             position: absolute;
-            top:34%;
+            top:20%;
             left: 50%;
             transform: translate(-50%,-50%);
         }
@@ -229,7 +240,7 @@
             font-size: .6vw;
             font-weight: bold;
             position: absolute;
-            top:34%;
+            top:20%;
             left: 50%;
             transform: translate(-50%,-50%);
         }
@@ -247,7 +258,7 @@
             font-size: .6vw;
             font-weight: bold;
             position: absolute;
-            top:34%;
+            top:20%;
             left: 50%;
             transform: translate(-50%,-50%);
         }
@@ -265,7 +276,7 @@
             font-size: .6vw;
             font-weight: bold;
             position: absolute;
-            top:34%;
+            top:20%;
             left: 50%;
             transform: translate(-50%,-50%);
         }
@@ -283,7 +294,7 @@
             font-size: .6vw;
             font-weight: bold;
             position: absolute;
-            top:34%;
+            top:20%;
             left: 50%;
             transform: translate(-50%,-50%);
         }
@@ -301,9 +312,17 @@
             font-size: .5vw;
             font-weight: bold;
             position: absolute;
-            top:34%;
+            top:20%;
             left: 50%;
             transform: translate(-50%,-50%);
+            @include mq(tb){
+                font-size: .3vw;
+                line-height: 1.2;
+            }
+            @include mq(pc){
+                font-size: .5vw;
+                line-height: 1.7;
+            }
         }
     }
     &.-sp-JYUKYO{

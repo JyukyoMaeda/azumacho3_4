@@ -10,6 +10,17 @@
         margin: auto;
     }
     .l-header-nav{
+        // margin-top: -2.5vh;
+  
+        @include mq(tb){
+            margin-top: 1vh;
+        }
+        @include mq(tb-pc1400){
+            margin-top: 1vh;
+        }
+        @include mq(pc){
+            margin-top: -1.2vh;
+        }
         &__inner{
             width: 100%;
             max-width: 1200px;
@@ -26,14 +37,10 @@
                 display: block;
                 width: 100%;
                 color: black;
-                background: white;
                 border-bottom: .5vh solid white;
-                padding: 4vh 0 1.5vh;
+                padding: 2vh 0 .5vh;
                 transition: .3s all;
                 &:hover{
-                    // font-weight: bold;
-                    // color: white;
-                    // background: $site-color01;
                     border-bottom: .5vh solid $site-color01;
 
                 }

@@ -6,6 +6,11 @@
 		max-width: 1200px;
 		margin: auto;
 	}
+	&.-w1050{
+		width: 100%;
+		max-width: 1050px;
+		margin: auto;
+	}
 	&.-w93-s{
 		@include mq(sp){
 			width: 93%;

@@ -10,7 +10,7 @@
 			justify-content: center;
 			padding: 1vh 2.5vw 0;
 			@include mq(tb){
-				padding: 2vh 0 0;
+				padding: 1.5vh 0 0;
 			}
 			.flexItem{
 				&.-logoArea{
@@ -19,6 +19,7 @@
 					@include mq(tb){
 						width: calc(10%);
 						margin-left: auto;
+						// padding-right: 2vw;
 					}
 				}
 				&.-center-contentsArea{
@@ -33,7 +34,8 @@
 						padding: 0;
 					}
 					@include mq(pc){
-						width: calc(55%);
+						width: calc(60%);
+						margin-top: 0.7%;
 					}
 				}
 				&.-right-contactArea{
@@ -45,22 +47,27 @@
 				}
 				&.-textArea{
 					@include mq(tb){
-						width: 50%;
+						width: 65%;
+						padding-right: 4%;
 					}
 					@include mq(pc){
-						width: 68%;
+						width: 60%;
+						padding-right: 1%;
 					}
 				}
 				&.-timeArea{
-					width: 100%;
+					width: 95%;
 					@include mq(tb){
-						width: 50%;
+						width: 33%;
+					}
+					@include mq(tb-pc1000){
+						width: 37%;
 					}
 					@include mq(tb-pc1400){
-						width: 40%;
+						width: 37%;
 					}
 					@include mq(pc){
-						width: 32%;
+						width: 26%;
 					}
 				}
 
@@ -69,7 +76,7 @@
 		&.-header-c-inner{
 			display: flex;
 			flex-wrap: nowrap;
-			justify-content: space-around;
+			justify-content: space-evenly;
 			align-items: center;
 		}
 		&.-header-contactArea{

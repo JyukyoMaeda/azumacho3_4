@@ -173,6 +173,16 @@ img{
 	}
 }
 
+.l-mgb_or{
+	margin-bottom: 0.4vh;
+	@include mq(tb){
+		margin-bottom: 0.7vh;
+	}
+}
+
+
+
+
 // 幅調整用 padding = 要素内の空間
 // 上のみ
 .l-pdt_5{
