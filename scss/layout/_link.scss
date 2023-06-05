@@ -298,9 +298,12 @@
             padding: 2.5vh 3.5vw;
         }
         &:hover{
-            color: black;
-            background: $site-color01;
-            transform: scale(1.1);
+            color: white;
+            background: #333333;
+            transform: scale(.95);
+            &::after{
+                color: white;
+            }
         }
     }
     &::after{
@@ -311,6 +314,7 @@
         content: ">";
         color: black;
         font-size: 12px;
+        transition: all .5s;
         @include mq(tb){
             font-size: 16px;
         }

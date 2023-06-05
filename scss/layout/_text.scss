@@ -261,6 +261,14 @@
             top:20%;
             left: 50%;
             transform: translate(-50%,-50%);
+            @include mq(tb){
+                font-size: .3vw;
+                line-height: 1.2;
+            }
+            @include mq(pc){
+                font-size: .5vw;
+                line-height: 1.7;
+            }
         }
     }
     &.-sp-BUILT{
