@@ -11,6 +11,11 @@
 		max-width: 1050px;
 		margin: auto;
 	}
+	&.-w90-s{
+		@include mq(sp){
+			width: 90%;
+		}
+	}
 	&.-w93-s{
 		@include mq(sp){
 			width: 93%;
@@ -110,6 +115,10 @@
 		@include mq(tb){
 			width: 100%;
 		}
+	}
+
+	&.-borderBtm{
+		border-bottom: 1px solid black;
 	}
 }
 

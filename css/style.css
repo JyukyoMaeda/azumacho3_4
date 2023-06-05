@@ -391,6 +391,11 @@ img {
   margin: auto;
 }
 @media screen and (max-width: 768px) {
+  .l-contents.-w90-s {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
   .l-contents.-w93-s {
     width: 93%;
   }
@@ -492,6 +497,9 @@ img {
   .l-contents.-textArea {
     width: 100%;
   }
+}
+.l-contents.-borderBtm {
+  border-bottom: 1px solid black;
 }
 
 .l-flex--area {
