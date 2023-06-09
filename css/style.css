@@ -200,6 +200,11 @@ img {
     margin-bottom: 1vh !important;
   }
 }
+@media screen and (max-width: 768px) {
+  .l-mgb_1.-s_5 {
+    margin-bottom: 5vh !important;
+  }
+}
 
 .l-mgb_2 {
   margin-bottom: 2vh !important;

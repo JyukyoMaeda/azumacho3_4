@@ -135,6 +135,11 @@ img{
 	@include mq(tb){
 		margin-bottom: 1vh !important;
 	}
+	&.-s_5{
+		@include mq(sp){
+			margin-bottom: 5vh !important;
+		}
+	}
 }
 .l-mgb_2{
 	margin-bottom: 2vh !important;
