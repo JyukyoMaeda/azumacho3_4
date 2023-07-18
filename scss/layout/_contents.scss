@@ -1,26 +1,7 @@
 .l-contents{
 	width: 100%;
 	height: auto;
-	&.-w1200{
-		width: 100%;
-		max-width: 1200px;
-		margin: auto;
-	}
-	&.-w1050{
-		width: 100%;
-		max-width: 1050px;
-		margin: auto;
-	}
-	&.-w90-s{
-		@include mq(sp){
-			width: 90%;
-		}
-	}
-	&.-w93-s{
-		@include mq(sp){
-			width: 93%;
-		}
-	}
+
 	&.-img{// 背景画像のみ
 		width: 100%;
 		height: auto;
@@ -30,6 +11,27 @@
 		.imgBox{// 背景画像
 			width: 100%;
 			height: auto;
+			&.-parallax{//パラドックス背景の場合、ここは透明画像
+				justify-content: center;
+				align-items: center;
+
+				background-attachment: fixed;
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			&.-parallax_bg_01{//ここに背景を指定する。
+				// background-image: url(../images/bg/header_bg_s.jpg);
+				@include mq(tb){
+					// background-image: url(../images/bg/top-contents01_bg.jpg);
+				}
+			}
+			&.-parallax_bg_02{//ここに背景を指定する。
+				// background-image: url(../images/bg/header_bg_s.jpg);
+				@include mq(tb){
+					// background-image: url(../images/bg/top-contents02_bg.jpg);
+				}
+			}
 		}
 		.l-contentsBox{// コンテンツ要素
 			width: 100%;
@@ -43,6 +45,7 @@
 					margin: auto;
 				}
 			}
+			&.-text,
 			&.-kukaku,
 			&.-location-trainBox,
 			&.-builtPlanText,
@@ -92,6 +95,22 @@
 					height: auto;
 				}
 			}
+
+			// 0717追加 ／ 区画図ページ
+			&.-kukaku-slider01{
+				@include mq(sp){
+					top: 25%;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+			&.-kukaku-slider02{
+				@include mq(sp){
+					top: 75%;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
 		}
 		&.-pc80{
 			width: 80%;
@@ -112,6 +131,7 @@
 	&.-textArea{
 		width: 90%;
 		height: auto;
+		margin: auto;
 		@include mq(tb){
 			width: 100%;
 		}
@@ -120,7 +140,6 @@
         width: 95%;
         margin: auto;
     }
-
 	&.-borderBtm{
 		border-bottom: 1px solid black;
 	}

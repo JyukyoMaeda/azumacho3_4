@@ -13,6 +13,7 @@
 // -----------------------------------------------
 // 開発中
 //下記スマホ未満
+
 @include mq(sp){
 	.sp{
 		display: block !important;
@@ -23,6 +24,7 @@
 		display: none !important;
 	}
 }
+
 //下記スマホ以上
 @include mq(tb){
 	.sp,
@@ -47,7 +49,6 @@
 
 // ブラウザ1400以上
 @include mq(tb-pc1600){
-
 	.pc1600{
 		display: block !important;
 	}
@@ -64,22 +65,52 @@ img{
 	user-drag: none;
 	-webkit-user-drag: none;
 	-moz-user-select: none;
+	vertical-align: bottom;
 }
 
-
-
-
-.-s-w90{
+.w1200{
+	width: 75% !important;
+	max-width: 1200px;
+	margin: auto;
+	&.-s100{
+		width: 100% !important;
+	}
+	&.-w45{
+		width: 95% !important;
+		@include mq(tb){
+			width: 45% !important;
+		}
+	}
+}
+.w1050{
+	width: 95%;
+	max-width: 1050px;
+	margin: auto;
+}
+.w850{
+	width: 95%;
+	max-width: 850px;
+	margin: auto;
+}
+.w90-s{
 	@include mq(sp){
-		width: 90%;
+		width: 90% !important;
 		margin: auto;
 	}
 }
-.-tb-w95{
-	@include mq(tb){
-		width: 95% !important;
+.w93-s{
+	@include mq(sp){
+		width: 93% !important;
+		margin: auto;
 	}
 }
+.tb-w95{
+	@include mq(tb){
+		width: 95% !important;
+		margin: auto;
+	}
+}
+
 
 
 // 幅調整用 margin = 要素外の空間
@@ -130,10 +161,21 @@ img{
 		margin-bottom: 1vh !important;
 	}
 }
-.l-mgb_1{
-	margin-bottom: 1vh !important;
-	@include mq(tb){
-		margin-bottom: 1vh !important;
+
+.l-mgb_1,
+.l-mgb_2,
+.l-mgb_3,
+.l-mgb_5,
+.l-mgb_10{
+	&.-s_1{
+		@include mq(sp){
+			margin-bottom: 1vh !important;
+		}
+	}
+	&.-s_3{
+		@include mq(sp){
+			margin-bottom: 3vh !important;
+		}
 	}
 	&.-s_5{
 		@include mq(sp){
@@ -141,16 +183,18 @@ img{
 		}
 	}
 }
+
+.l-mgb_1{
+	margin-bottom: 1vh !important;
+	@include mq(tb){
+		margin-bottom: 1vh !important;
+	}
+}
 .l-mgb_2{
 	margin-bottom: 2vh !important;
 }
 .l-mgb_3{
 	margin-bottom : 2vh !important;
-	&.-s_1{
-		@include mq(sp){
-			margin-bottom: 1vh !important;
-		}
-	}
 	@include mq(tb){
 		margin-bottom: 3vh !important;
 	}
@@ -163,18 +207,14 @@ img{
 }
 .l-mgb_10{
 	margin-bottom : 8vh !important;
-	&.-s_1{
-		@include mq(sp){
-			margin-bottom: 1vh !important;
-		}
-	}
-	&.-s_5{
-		@include mq(sp){
-			margin-bottom: 5vh !important;
-		}
-	}
 	@include mq(tb){
 		margin-bottom: 10vh !important;
+	}
+}
+.l-mgb_20{
+	margin-bottom: 10vh !important;
+	@include mq(tb){
+		margin-bottom: 20vh !important;
 	}
 }
 
