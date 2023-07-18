@@ -161,6 +161,11 @@ img{
 		margin-bottom: 1vh !important;
 	}
 }
+.l-mgb_3_s{
+	@include mq(sp){
+		margin-bottom: 3vh !important;
+	}
+}
 
 .l-mgb_1,
 .l-mgb_2,

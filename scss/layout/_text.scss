@@ -59,7 +59,6 @@
                     font-size: 16px;
                 }
             }
-    
         }
         &.-sizeLL{//30px
             font-size: 18px;
@@ -69,6 +68,11 @@
             &.-s24{
                 @include mq(sp){
                     font-size: 24px;
+                }
+            }
+            &.-s16{
+                @include mq(sp){
+                    font-size: 16px;
                 }
             }
             &.-s17{
@@ -92,6 +96,11 @@
             &.-s32{
                 @include mq(sp){
                     font-size: 32px;
+                }
+            }
+            &.-s38{
+                @include mq(sp){
+                    font-size: 38px;
                 }
             }
             @include mq(tb){
@@ -164,7 +173,7 @@
         font-weight: 400;
         font-style: normal;
 
-    }
+    }xxx
     &.-family02{//遊ゴシック
         font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     }
@@ -175,11 +184,16 @@
     }
     &.-family04{//garamond
         font-family: "garamond-premier-pro-display", serif;
-        font-weight: 500;
+        font-weight: 400;
         font-style: italic;
     }
     &.-family05{//メイリオ
         font-family:'メイリオ', 'Meiryo', sans-serif;
+    }
+    &.-family06{
+        font-family: "garamond-premier-pro", serif;
+        font-weight: 400;
+        font-style: normal;
     }
 
     &.-REQUEST{

@@ -24,6 +24,11 @@
     <script src="js/menu.js"></script>
     <script src="js/pagetop.js"></script>
 
+    <!-- swiper関係 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- //swiper関係 -->
+
 
     <!-- Global site tag (gtag.js) - Google Analytics --> 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48905020-1"></script> 
@@ -51,11 +56,10 @@
       </script>
 
 </head>
-<body id="P-concept" class="js_humburgerClose">
+<body id="p-setsubi" class="js_humburgerClose">
 
     <div id="all">
-        <!-- <header class="l-header l-mgb_5"> -->
-        <header class="l-header l-mgb_1">
+        <header class="l-header l-mgb_3">
             <!-- ヘッダー上部 -->
             <div class="l-header-contents">
                 <div class="l-flex--area">
@@ -64,7 +68,6 @@
                         <h1 class="flexItem -logoArea">
                             <a href="index.html">
                                 <img class="" src="images/SVG/logo_new.svg" alt="GRANCIA 入間市東町3丁目4期">
-                                <!-- <img class="" src="images/SVG/logo02.svg" alt="GRANCIA 入間市東町3丁目4期"> -->
                             </a>
                         </h1>
                         <!-- 中央部分 -->
@@ -107,7 +110,7 @@
             </div>
             <!-- ヘッダー中部／スマホのみ -->
             <div class="sp l-header-obi l-mgb_1_s">
-                <p class="l-text -sizeM">
+                <p class="l-text -sizeM -family01">
                     開放感ある整然とした街並み、そして緑あふれる周辺環境。
                     子育て世代に相応しい永住の地、入間市東町に全11区画の街が誕生！
                 </p>
@@ -117,8 +120,7 @@
                 <div class="l-header-nav__inner">
                     <ul class="l-header-nav__lists">
                         <li class="l-header-nav__list"><a href="index.html" class="l-text -sizeM -v02 -family01 -center -TOP">トップ</a></li>
-                        <li class="l-header-nav__list"><a href="concept.html" class="l-text -sizeM -v02 -family01 -center -CONCEPT">コンセプト</a></li>
-                        <li class="l-header-nav__list"><a href="built.html" class="l-text -sizeM -v02 -family01 -center -BUILT">新築分譲住宅</a></li>
+                        <li class="l-header-nav__list"><a href="kukaku.html" class="l-text -sizeM -v02 -family01 -center -KUKAKU">区画図</a></li>
                         <li class="l-header-nav__list"><a href="setsubi.html" class="l-text -sizeM -v02 -family01 -center -SETSUBI active">設備・仕様</a></li>
                         <li class="l-header-nav__list"><a href="location.html" class="l-text -sizeM -v02 -family01 -center -LOCATION">周辺環境/アクセス</a></li>
                         <li class="l-header-nav__list"><a target="_blank" href="https://www.jyukyo-cnst.co.jp/house/order/house-making/" class="l-text -sizeM -v02 -family01 -center -JYUKYO">住協の家づくり</a></li>
@@ -132,10 +134,7 @@
                             <a href="index.html" class="l-text -family01 -center -sp-TOP">トップ</a>
                         </div>
                         <div class="l-header-navBox__list">
-                            <a href="concept.html" class="l-text -family01 -center -sp-CONCEPT">コンセプト</a>
-                        </div>
-                        <div class="l-header-navBox__list">
-                            <a href="built.html" class="l-text -family01 -center -sp-BUILT">新築分譲住宅</a>
+                            <a href="kukaku.html" class="l-text -family01 -center -sp-KUKAKU">区画図</a>
                         </div>
                         <div class="l-header-navBox__list">
                             <a href="setsubi.html" class="l-text -family01 -center -sp-SETSUBI active">設備・仕様</a>
@@ -151,21 +150,22 @@
             </div>
         </header>
         <div class="l-container">
-            <div class="l-contents -w1200 l-mgb_10">
+            <div class="l-contents w1200 w93-s l-mgb_10">
                 <div class="l-flex--area">
                     <div class="l-flex--contents -flexView">
                         <div class="flexItem -textArea  l-mgb_1_s">
-                            <h2 class="title l-text -size3L -s32 -family04"><span class="l-text -size4L -v02">E</span>QUIPMENT</h2>
+                            <h2 class="title l-text -size3L -s38 -family06 -sp-lh-1"><span class="l-text">E</span>quipment</h2>
                             <div class="des-box">
-                                <p class="l-text -sizeLL -family01 l-mgb_1">
-                                    使い勝手やデザイン性に<br>
-                                    こだわった設備仕様
+                                <p class="pc l-text -sizeLL -s16 -family01 l-mgb_1">
+                                    使い勝手やデザイン性に<br>こだわった設備仕様
                                 </p>
-                                <p class="l-text -lh-2 -family01 l-mgb_1_s">
-                                    毎日使う水回りはお手入れが簡単で<br class="pc1600">
-                                    デザイン性の高いアイテムを採用しました。<br class="pc1600">
-                                    家事の負担が減り、時短になることで、<br class="pc1600">
-                                    生活にゆとりをもたらし、清潔な空間を保ちます。
+                                <p class="sp l-text -sizeLL -s16 -family01 l-mgb_1">
+                                    使い勝手やデザイン性にこだわった設備仕様
+                                </p>
+
+                                <p class="l-text -lh-2 -family01 l-mgb_3_s">
+                                    暮らしを支える設備・仕様。<br class="pc">
+                                    複数メーカーからお客様に合ったものを選べます。
                                 </p>
                             </div>
                         </div>
@@ -175,217 +175,227 @@
                     </div>
                 </div>
             </div>
-            <!-- キッチン -->
-            <div class="l-contents -w1200 -tb-w95 -w93-s l-mgb_10">
-                <h2 class="l-text -size3L -s32 -family04 -left">Kitchen</h2>
-                <div class="l-flex--area l-mgb_3">
-                    <div class="l-flex--contents -setsubi-titleArea">
-                        <div class="flexItem">
-                            <p class="l-text -sizeLL -family01 l-mgb_1_s">暮らしの中で輝き続けるシステムキッチン</p>
+
+            <div class="l-contents -slider w1200 w93-s l-mgb_10 -s_3">
+                <div class="l-contens--wrapper">
+                    <div class="option-contents">
+                        <!-- 1.システムキッチン > 完 -->
+                        <div class="swiper-title l-mgb_5 -s_1">
+                            <img class="balloon3 -site-balloon-c" src="images/setsubi/balloon-03-min.png" alt="選べる3メーカー">
+                            <p class="l-text -sizeM -family06 -center -lts-8">KITCHEN</p>
+                            <p class="l-text -sizeLL -family01 -center">システムキッチン</p>
                         </div>
-                        <div class="flexItem">
-                            <img src="images/SVG/lixil-logo.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="l-flex--area">
-                    <div class="l-flex--contents -setsubi-itemArea">
-                        <div class="flexItem  l-mgb_1_s">
-                            <img class="sp l-mgb_or" src="images/pic/setsubi01-item01_s-min.jpg" alt="">
-                            <img class="pc l-mgb_or" src="images/pic/setsubi01-item01-min.jpg" alt="">
-                            <p class="l-text -sizeL -b -family01">スキットシンク<span class="l-text -sizeM ">（ステンレスシンク）</span></p>
-                            <p class="l-text -sizeM -family01">
-                                水ハネ音が静かな静音設計。排水口は素早く効率的に段差に流し込むナイアガラフロー方式を採用。
-                            </p>
-                        </div>
-                        <div class="flexItem">
-                            <img src="images/pic/setsubi01-item02-min.jpg" alt="">
-                            <p class="l-text -sizeL -b -family01">蛇口一体型浄水器</p>
-                            <p class="l-text -sizeM -family01">
-                                オールインワンのため浄水でシャワーがたっぷり使えます。さらにホースが引き出せて、シンク洗いはもちろん、ポットやお鍋などに浄水を注ぐ際にも便利。
-                            </p>
-                        </div>
-                        <div class="flexItem">
-                            <img src="images/pic/setsubi01-item03-min.jpg" alt="">
-                            <p class="l-text -sizeL -b -family01">キャビネット</p>
-                            <p class="l-text -sizeM -family01">
-                                鍋やフライパン、調味料に調理小物など大小さまざまな物を用途に分けてスッキリ収納。扉を勢いよく閉めても減速して静かに閉まるソフトモーションレール。
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- バスルーム -->
-            <div class="l-contents -w1200 -tb-w95 -w93-s l-mgb_10">
-                <h2 class="l-text -size3L -s32 -family04 -left">Bathroom</h2>
-                <div class="l-flex--area l-mgb_3">
-                    <div class="l-flex--contents -setsubi-titleArea">
-                        <div class="flexItem">
-                            <p class="l-text -sizeLL -family01">1日の心と身体の疲れを癒すバスルーム</p>
-                        </div>
-                        <div class="flexItem">
-                            <img src="images/SVG/toto-logo.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="l-flex--area">
-                    <div class="l-flex--contents -setsubi-itemArea02">
-                        <div class="flexItem  l-mgb_1_s">
-                            <div class="l-contents -img-bg l-mgb_1">
-                                <div class="imgBox">
-                                    <img class="pc" src="images/pic/setsubi02-item01_bg-min.jpg" alt="">
-                                    <img class="sp" src="images/pic/setsubi02-item01_s.png" alt="">
-                                </div>
-                                <div class="pc l-contentsBox -setsubiText">
-                                    <img src="images/SVG/setsubi02-item01_text.svg" alt="">
-                                </div>
-                            </div>
-                            <p class="l-text -sizeL -b -family01 -sp-lh-1">ゆるリラ浴槽<span class="l-text -size10 ">（6号棟採用／ステップ付…浴槽内に段差があるので、お子様が座って入浴しやすい）</span></p>
-                            <p class="l-text -sizeM -family01  l-mgb_1_s">
-                                浴槽断熱材＋高断熱のふろふたの優れた断熱構造“魔法瓶浴槽”を採用。お湯はりから4時間後の低下温度はわずか-2.5℃以内！残業で帰りが遅いパパもあったかいお風呂に入れます。また浴室暖房乾燥機付きなので、急激な温度変化を抑制しヒートショックを予防、雨の日でも洗濯物が乾かせるので天気を気にせず洗濯機が回せます。
-                            </p>
-                        </div>
-                        <div class="flexItem">
-                            <div class="pc">
-                                <img class="l-mgb_1_s" src="images/pic/setsubi02-item02-min.jpg" alt="">
-                                <p class="l-text -sizeL -b -family01">ほっカラリ床</p>
-                                <p class="l-text -sizeM -family01">
-                                    冷気をシャットアウトするW断熱構造と思わず足を進めたくなるやわらかさ。翌朝はカラリ。靴下でも入れます。
-                                </p>
-                                <p class="l-text -size10 -right">（TOTOの登録商標）</p>
-                            </div>
-                            <div class="sp">
-                                <div class="l-flex--area">
-                                    <div class="l-flex--contents -setsubi-itemArea_sp">
-                                        <div class="flexItem">
-                                            <img class="l-mgb_1" src="images/pic/setsubi02-item02-min.jpg" alt="">
+                        <div class="swiperArea">
+                            <div class="swiper-container card-swiper -sliderItem01">
+                                <div class="swiper-wrapper l-mgb_5_s">
+                                    <div class="swiper-slide">
+                                        <div class="card-L">
+                                            <p class="l-text -sizeM -family01 -center l-mgb_5">汚れに強く傷みにくい、<br class="sp">美しさをいつまでも保つ気持ちのいいキッチン。</p>
+                                            <img class="pc" src="images/setsubi/kitchen_1_new-min.jpg" alt="">
+                                            <img class="sp" src="images/setsubi/kitchen_1_new_s-min.jpg" alt="">
                                         </div>
-                                        <div class="flexItem">
-                                            <p class="l-text -sizeL -b -family01">ほっカラリ床</p>
-                                            <p class="l-text -sizeM -family01">
-                                                冷気をシャットアウトするW断熱構造と思わず足を進めたくなるやわらかさ。翌朝はカラリ。靴下でも入れます。
-                                            </p>
-                                            <p class="l-text -size10 -right">（TOTOの登録商標）</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card-L">
+                                            <p class="l-text -sizeM -family01 -center l-mgb_5">シンプルだからこそ使いやすい。料理をつくる時間、<br class="sp">家族と過ごす時間を大切にするキッチン。</p>
+                                            <img class="pc" src="images/setsubi/kitchen_2_new-min.jpg" alt="">
+                                            <img class="sp" src="images/setsubi/kitchen_2_new_s-min.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card-L">
+                                            <p class="l-text -sizeM -family01 -center l-mgb_5">暮らしの中で輝き続けるキッチン。<br class="sp">積み重ねてきた不変のこだわり。</p>
+                                            <img class="pc" src="images/setsubi/kitchen_3_new-min.jpg" alt="">
+                                            <img class="sp" src="images/setsubi/kitchen_3_new_s-min.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-pagination"></div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <!-- 鏡 -->
-            <div class="l-contents -w1200 -tb-w95 -w93-s l-mgb_10">
-                <h2 class="l-text -size3L -s32 -family04 -left">Dresser</h2>
-                <div class="l-flex--area l-mgb_3">
-                    <div class="l-flex--contents -setsubi-titleArea -v02">
-                        <div class="flexItem">
-                            <p class="l-text -sizeLL -family01">使い勝手からお掃除まで家族みんなに嬉しい機能が満載</p>
+                        <div class="border-bottom"></div>
+
+                        <!-- 2.バスルーム > 完 -->
+                        <div class="swiper-title l-mgb_5 -s_1">
+                            <img class="balloon3 -site-balloon-c" src="images/setsubi/balloon-02-min.png" alt="選べる2メーカー">
+                            <p class="l-text -sizeM -family06 -center -lts-8">BATHROOM</p>
+                            <p class="l-text -sizeLL -family01 -center">バスルーム</p>
                         </div>
-                        <div class="flexItem l-mgb_-2_s">
-                            <img src="images/SVG/lixil-logo_mv.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="l-flex--area l-mgb_1_s">
-                    <div class="l-flex--contents -setsubi-itemArea03">
-                        <div class="flexItem -leftBox">
-                            <img src="images/pic/setsubi03-item01-min.jpg" alt="">
-                        </div>
-                        <div class="flexItem -rightBox">
-                            <div class="l-flex--area">
-                                <div class="l-flex--contents -setsubi-itemArea03_01 l-mgb_3">
-                                    <div class="flexItem">
-                                        <img src="images/pic/setsubi03-item02-min.jpg" alt="">
+                        <div class="swiperArea">
+                            <div class="swiper-container card-swiper -sliderItem01">
+                                <div class="swiper-wrapper l-mgb_8_s">
+                                    <div class="swiper-slide">
+                                        <div class="card-L">
+                                            <p class="l-text -sizeM -family01 -center l-mgb_5">足元、浴び心地、ぬくもりにこだわった<br class="sp">最高のくつろぎをお届け。</p>
+                                            <img class="pc" src="images/setsubi/bathroom_1_new-min.jpg" alt="">
+                                            <img class="sp" src="images/setsubi/bathroom_1_new_s-min.jpg" alt="">
+                                        </div>
                                     </div>
-                                    <div class="flexItem">
-                                        <p class="l-text -sizeL -s16 -b -family01 -left l-mgb_1_s">キレイアップカウンター</p>
-                                        <p class="l-text -sizeM -family01 -left">
-                                            バックガードがミラー下まであるキレイアップカウンターはつなぎ目がないので、飛び散った水滴をサッと拭き取れます。洗面器容量は１６Ｌの大容量です。
-                                        </p>
+                                    <div class="swiper-slide">
+                                        <div class="card-L">
+                                            <p class="l-text -sizeM -family01 -center l-mgb_5">いつも自然体でさりげない心地良さ。<br class="sp">ゆったりと浸かって過ごす、くつろぎのバスタイム。</p>
+                                            <img class="pc" src="images/setsubi/bathroom_2_new-min.jpg" alt="">
+                                            <img class="sp" src="images/setsubi/bathroom_2_new_s-min.jpg" alt="">
+                                        </div>
                                     </div>
+
                                 </div>
-                                <div class="pc l-contents -img-bg  l-mgb_1">
-                                    <div class="imgBox">
-                                        <img src="images/pic/setsubi03-item03_bg.jpg" alt="">
-                                    </div>
-                                    <div class="l-contentsBox -setsubiText">
-                                        <img src="images/SVG/setsubi03-item03_text.svg" alt="">
-                                    </div>
-                                </div>
-                                <p class="pc l-text -sizeM -family01 -left">
-                                    A.新てまなし排水口／金属フランジがなく、なめらかな形状で、しかも排水口の奥の突起がなくてお掃除簡単。B.エコハンドル／お湯の無駄遣いを防止する、よく使う正面のハンドル位置で｢水｣を出す省エネ設計。C.キレイアップ水栓／上から水が出るキレイアップ水栓は、水栓まわりに水がたまりにくいのでお掃除簡単です。
-                                </p>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-pagination"></div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="sp l-contents -img-bg  l-mgb_1">
-                    <div class="imgBox">
-                        <img src="images/pic/setsubi03-item03_bg.jpg" alt="">
-                    </div>
-                    <div class="l-contentsBox -setsubiText">
-                        <img src="images/SVG/setsubi03-item03_text.svg" alt="">
-                    </div>
-                </div>
-                <p class="sp l-text -sizeM -family01 -left">
-                    A.新てまなし排水口／金属フランジがなく、なめらかな形状で、しかも排水口の奥の突起がなくてお掃除簡単。B.エコハンドル／お湯の無駄遣いを防止する、よく使う正面のハンドル位置で｢水｣を出す省エネ設計。C.キレイアップ水栓／上から水が出るキレイアップ水栓は、水栓まわりに水がたまりにくいのでお掃除簡単です。
-                </p>
-            </div>
-            <!-- トイレ -->
-            <div class="l-contents -w1200 -tb-w95 -w93-s l-mgb_10">
-                <h2 class="l-text -size3L -s32 -family04 -left">Lavatory</h2>
-                <div class="l-flex--area l-mgb_1">
-                    <div class="l-flex--contents -setsubi-titleArea -v02">
-                        <div class="flexItem">
-                            <p class="l-text -sizeLL -family01">大きな手洗いボウルと新フチなし形状で、
-                                より使いやすく、より清潔に</p>
+                        <div class="border-bottom"></div>
+
+                        <!-- 3.洗面化粧台 > 完 > 事情により「非表示処理」 -->
+                        <!-- <div class="swiper-title">
+                            <p class="l-text -sizeM -family06 -center -lts-8">WASHSTAND</p>
+                            <p class="l-text -sizeLL -family01 -center l-mgb_3">洗面化粧台</p>
+                            <p class="l-text -sizeM -family01 -center">もっと美しく。もっと使いやすく。使う人のための工夫が満載の洗面化粧台。</p>
                         </div>
-                        <div class="flexItem l-mgb_-2_s">
-                            <img src="images/SVG/toto-logo_zj2.svg" alt="">
+                        <div class="washatendArea card-L">
+                            <img class="pc" src="images/setsubi/washstand_1_new.jpg" alt="洗面化粧台 もっと美しく。もっと使いやすく。使う人のための工夫が満載の洗面化粧台。">
                         </div>
+                        <div class="border-bottom"></div> -->
+
+                        <!-- 4.トイレ > 完 -->
+                        <div class="swiper-title l-mgb_5">
+                            <img class="balloon2 -site-balloon-c" src="images/setsubi/balloon-02-min.png" alt="選べる2メーカー">
+                            <p class="l-text -sizeM -family06 -center -lts-8">TOILET</p>
+                            <p class="l-text -sizeLL -family01 -center l-mgb_3">トイレ</p>
+                        </div>
+                        <div class="swiperArea">
+                            <div class="swiper-container card-swiper -sliderItem01">
+                                <div class="swiper-wrapper l-mgb_8_s">
+                                    <div class="swiper-slide">
+                                        <div class="card-L">
+                                            <p class="l-text -sizeM -family01 -center l-mgb_5">大きな手洗いボウルと新フチなし形状で、<br class="sp">より使いやすく清潔なトイレ空間に。</p>
+                                            <img class="pc" src="images/setsubi/toilet_1_new-min.jpg" alt="">
+                                            <img class="sp" src="images/setsubi/toilet_1_new_s-min.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card-L">
+                                            <p class="l-text -sizeM -family01 -center l-mgb_5">便器も便座もお掃除ラクラク。<br class="sp">キレイが続く一体型シャワートイレ。</p>
+                                            <img class="pc" src="images/setsubi/toilet_2_new-min.jpg" alt="">
+                                            <img class="sp" src="images/setsubi/toilet_2_new_s-min.jpg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="border-bottom"></div>
+
+                        <!-- 5.フローリング > 完 -->
+                        <div class="swiper-title l-mgb_5">
+                            <img class="balloon2 -site-balloon-c" src="images/setsubi/balloon-02-min.png" alt="選べる2メーカー">
+                            <p class="l-text -sizeM -family06 -center -lts-8">FLOORING</p>
+                            <p class="l-text -sizeLL -family01 -center l-mgb_3">フローリング</p>
+                            <p class="l-text -sizeM -family01 -center">デザイン性に優れた6種類のラインナップ。<br>キャスターや落下物などによる傷に強く、<br class="sp">床暖房にも対応しています。</p>
+                        </div>
+                        <div class="swiperArea">
+                            <div class="swiper-container card-swiper -sliderItem01">
+                                <div class="swiper-wrapper l-mgb_8_s">
+                                    <div class="swiper-slide">
+                                        <div class="card-L">
+                                            <img class="pc" src="images/setsubi/flooring_1_new-min.jpg" alt="">
+                                            <img class="sp" src="images/setsubi/flooring_1_new_s-min.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card-L">
+                                            <img class="pc" src="images/setsubi/flooring_2_new-min.jpg" alt="">
+                                            <img class="sp" src="images/setsubi/flooring_2_new_s-min.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="border-bottom "></div>
+
+                        <!-- 6.耐熱ドア > 完 -->
+                        <div class="swiper-title l-mgb_3">
+                            <img class="balloon2 -site-balloon-c" src="images/setsubi/balloon-02-min.png" alt="選べる2メーカー">
+                            <p class="l-text -sizeM -family06 -center -lts-8" style="text-transform: uppercase;">Insulation Entrance Door</p>
+                            <p class="l-text -sizeLL -family01 -center l-mgb_3">耐熱玄関ドア</p>
+                            <p class="l-text -sizeM -family01 -center">住宅スタイルに合わせて選べるデザイン。<br>基本性能を備え、安心・快適性にも配慮しています。</p>
+                        </div>
+                        <div class="swiperArea">
+                            <div class="swiper-container card-swiper -sliderItem01">
+                                <div class="swiper-wrapper l-mgb_8_s">
+                                    <div class="swiper-slide">
+                                        <div class="card-L">
+                                            <img class="pc l-mgb_3" src="images/setsubi/door_1_new-min.jpg" alt="">
+                                            <img class="sp" src="images/setsubi/door_1_new_s-min.jpg" alt="">
+                                            <p class="l-text -size10 -family01 -left">※各種それぞれのカラーについてはお問い合わせ下さい。</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card-L">
+                                            <img class="pc l-mgb_3" src="images/setsubi/door_2_new-min.jpg" alt="">
+                                            <img class="sp" src="images/setsubi/door_2_new_s-min.jpg" alt="">
+                                            <p class="l-text -size10 -family01 -left">※各種それぞれのカラーについてはお問い合わせ下さい。</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="border-bottom"></div>
+
+                        <!-- 7.宅配ボックス > 完 -->
+                        <div class="swiper-title l-mgb_5">
+                            <p class="l-text -sizeM -family06 -center -lts-8" style="text-transform: uppercase;">Delivery Box</p>
+                            <p class="l-text -sizeLL -family01 -center l-mgb_3">宅配ボックス</p>
+                            <p class="l-text -sizeM -family01 -center">選べる2タイプ。<br class="sp">美観、機能性に備わった門柱で外構をより美しく。</p>
+                        </div>
+                        <div class="washatendArea card-L">
+                            <img class="pc" src="images/setsubi/deliveryBox_1_new-min.jpg" alt="">
+                            <img class="sp" src="images/setsubi/deliveryBox_1_new_s-min.jpg" alt="">
+                        </div>
+                        <div class="border-bottom"></div>
+
+                        <!-- 8.構造・工法 -->
+                        <div class="swiper-title l-mgb_10 -s_5">
+                            <p class="l-text -sizeM -family06 -center -lts-8" style="text-transform: uppercase;">structure/method</p>
+                            <p class="l-text -sizeLL -family01 -center l-mgb_3">構造・工法</p>
+                            <p class="l-text -sizeM -family01 -center">住まいの根幹である基礎・構造に<br class="sp">最新のテクノロジーを取り入れ<br class="sp">高耐久・高耐震を標準にした住まいづくり。</p>
+                        </div>
+                        <div class="washatendArea card-L">
+                            <img class="pc" src="images/setsubi/meshod_new-min.jpg" alt="">
+                            <img class="sp" src="images/setsubi/meshod_new_s-min.jpg" alt="">
+                        </div>
+                            <!-- <div class="border-bottom -last"></div> -->
+
                     </div>
                 </div>
-                <div class="l-contents -img-bg l-mgb_1">
-                    <div class="imgBox">
-                        <img class="sp" src="images/pic/setsubi04-item01_bg_s-min.jpg" alt="">
-                        <img class="pc" src="images/pic/setsubi04-item01_bg-min.jpg" alt="">
-                    </div>
-                    <div class="l-contentsBox -setsubiText">
-                        <img class="sp" src="images/SVG/setsubi04-item01_text_s.svg" alt="">
-                        <img class="pc" src="images/SVG/setsubi04-item01_text.svg" alt="">
-                    </div>
-                </div>
-                <p class="l-text -sizeM -family01 -left">
-                    環境にやさしく、しかも経済的。従来品に比べ約71%の超節水が可能に。水道代も年間約14,200円おトクです。
-                    また、お掃除のしやすさを究めたTOTO独自のフチ形状「スゴフチ」。奥までぐるーっとフチなしだから、お手入れカンタン。
-                </p>
             </div>
-            <!-- 窓 -->
-            <div class="l-contents -w1200 -tb-w95 -w93-s l-mgb_10 -s_5">
-                <h2 class="l-text -size3L -s32 -family04 -left">Convenient and comfortable</h2>
-                <p class="l-text -sizeLL -s17 -family01 l-mgb_3">
-                    暮らしやすさと安心をもたらす仕様やアイテム
-                </p>
-                <div class="l-contents -img-bg l-mgb_1">
-                    <div class="imgBox">
-                        <img class="sp" src="images/pic/setsubi05-item01_bg_s.jpg" alt="">
-                        <img class="pc" src="images/pic/setsubi05-item01_bg.jpg" alt="">
-                    </div>
-                    <div class="l-contentsBox -setsubiText">
-                        <img class="sp" src="images/SVG/setsubi05-item01_text_s.svg" alt="">
-                        <img class="pc" src="images/SVG/setsubi05-item01_text.svg" alt="">
-                    </div>
-                </div>
-                <p class="l-text -sizeL -s15 -family01 -left">天然木の深い味わいとみずみずしさを突き板で表現</p>
-                <p class="l-text -sizeM -family01 -left">
-                    良質な銘木を厳選したフローリング。自然が創りだしたみずみずしい木肌や鮮やかな木目、熟練工の手を加えることで、美しい意匠を愉しんでいただけます。足触りの良いツヤ消し塗装やフリーワックス、落下物などの衝撃にも強い耐久性・安定性を兼ね備えています。
-                </p>
-            </div>
+
+            
+            <!-- 戻るボタン > 追加 -->
+            <!-- <div class="l-contents -btnArea -return l-mgb_10 -s_3">
+                <a class="l-linkImg -p03" href="index.html#content2_2">
+                    <img src="images/btn/return_btn.jpg" alt="トップに戻る">
+                </a>
+            </div> -->
+
+
             <!-- お気軽にお問い合わせ～～ -->
             <div class="l-contents -textArea -w1200">
                 <!-- 追加 -->
-                <p class="l-text -sizeM -family01 -center l-mgb_1 -s_5">※自由設計で建てる建築条件付土地は<br class="sp">一部、仕様・設備が異なります。</p>
+                <!-- <p class="l-text -sizeM -family01 -center l-mgb_1 -s_5">※自由設計で建てる建築条件付土地は<br class="sp">一部、仕様・設備が異なります。</p> -->
                 <h2 class="l-text -sizeLL -family01 -center l-mgb_1">お気軽にお問い合わせください。</h2>
                 <p class="l-text -sizeM -family01 -center l-mgb_5">
                     住まい探し･家づくりに関するご相談、現地やモデルハウスの見学、資料請求など、すべて無料で承っております。
@@ -424,8 +434,8 @@
 
 
     <div class="gaiyo_wrap">
-        <div class="gaiyo_link l-text -sizeM -family01"><a class="iframe cboxElement" href="https://www.jyu-g.co.jp/contents/detail/712707602"><span class="l-text -sizeL">新築戸建6号棟</span>物件概要はこちら ＞</a></div>
         <div class="gaiyo_link l-text -sizeM -family01"><a class="iframe cboxElement" href="https://www.jyu-g.co.jp/contents/detail/712034697"><span class="l-text -sizeL">建築条件付土地</span>物件概要はこちら ＞</a></div>
+        <div class="gaiyo_link l-text -sizeM -family01"><a class="iframe cboxElement" href="https://www.jyu-g.co.jp/special/azumacho4_4"><span class="l-text -sizeL">近隣の物件情報</span>物件概要はこちら ＞</a></div>
     </div>
 
     <p id="pageTop"><a href="#">ページ<br>TOP</a></p>
@@ -463,31 +473,29 @@
         $(function() {
             $(".iframe").colorbox({
                 iframe:true,
-                width:"80%",
+                width:"90%",
                 height:"90%",
                 opacity: 0.7
             });
         });
-        // 通常スライダー用
-        $(function(){
-            $(".concept-slider01").slick({
-                autoplay:true,
-                speed: 2000,
-                dots: true,
-                // dotsClass: 'slide-dots',
-                fade: true,
-                prevArrow: '<button class="slide-arrow prev-arrow"></button>',
-                nextArrow: '<button class="slide-arrow next-arrow"></button>',
-
-                responsive: [{
-                    breakpoint: 480,
-                        settings: {
-                        slidesToShow: 1,
-                        centerMode: true,
-                        centerPadding: '20%',
-                    }
-                }]
-            });
+        // 設備・仕様
+        const swiperB = new Swiper('.card-swiper.-sliderItem01', {
+            loop: true,
+            dots: true,
+            slidesPerView: 1,
+            centeredSlides: true,
+            spaceBetween: 105,
+            // autoplay: {
+            //     delay: 5000,
+            // },
+            pagination: {
+                el: '.swiper-pagination',
+                // clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
         });
 
     </script>

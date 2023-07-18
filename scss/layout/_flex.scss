@@ -8,7 +8,7 @@
 			flex-wrap: nowrap;
 			align-items: center;
 			justify-content: center;
-			padding: 1vh 2.5vw 0;
+			padding: 1vh 2.5vw 1.5vh;
 			@include mq(tb){
 				padding: 1.5vh 0 0;
 			}
@@ -136,7 +136,7 @@
 			.flexItem{
 				&.-textArea{
 					@include mq(sp){
-						padding: 0 3%;
+						// padding: 0 3%;
 					}
 					@include mq(tb){
 						width: 40%;
@@ -146,7 +146,7 @@
 						padding: 0;
 					}
 					.title{
-						color: $site-color01;
+						// color: $site-color01;
 					}
 					.des-box{
 						@include mq(tb){

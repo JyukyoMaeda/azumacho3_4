@@ -111,6 +111,27 @@
 					transform: translateX(-50%);
 				}
 			}
+
+			// 設備・仕様 > 戻るボタン
+			// &.-btnArea{ 
+			// 	&.-return{
+			// 		a{
+			// 			display: block;
+			// 			width: 20%;
+			// 			border-radius: 5px;
+			// 			overflow: hidden;
+			// 			margin: auto;
+			// 			text-align: center;
+			// 			box-shadow: 1px 1px gray;
+			// 			@include mq(tb){
+			// 				width: 10%;
+			// 			}
+			// 			@include mq(tb-pc1400){
+			// 				width: 6%;
+			// 			}
+			// 		}
+			// 	}
+			// }
 		}
 		&.-pc80{
 			width: 80%;
